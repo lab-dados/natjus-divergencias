@@ -37,4 +37,4 @@ Os dados analisados são públicos e estão na plataforma e-NatJus do Conselho N
 
 ## Uso de inteligência artificial {.unnumbered}
 
-Os autores usaram as ferramentas de inteligência artificial Claude Code (Anthropic) e Codex (OpenAI) no desenvolvimento do código de análise dos dados e de montagem do manuscrito, na conversão do texto revisado pelos autores do Word para os arquivos-fonte do manuscrito e na diagramação do PDF. Os autores revisaram o que as ferramentas produziram e respondem pelo conteúdo do artigo.
+Os autores usaram as ferramentas de inteligência artificial Claude Code (Anthropic) e Codex (OpenAI) em três tarefas: escrever o código de análise dos dados; escrever o código que leva ao texto os números, as tabelas e as figuras produzidos pela análise, sem digitação manual, e que gera as versões do artigo em Word e em PDF, com a diagramação do PDF; e passar o texto que os autores revisaram no Word para os arquivos em que o artigo é mantido. Os autores revisaram o que as ferramentas produziram e respondem pelo conteúdo do artigo.
