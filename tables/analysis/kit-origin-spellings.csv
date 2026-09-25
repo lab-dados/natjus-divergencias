@@ -1,0 +1,359 @@
+# generated_at: 2026-09-11T18:33:43-0300
+# source: the collector's dicionario_natjus.csv (not versioned here)
+# source_sha256: 8b106738c8c93684ffe1f91078898080965564686503e7b38eb25ea182d68dff
+# source_rows: 5300
+# rows: distinct spellings of the institution field, among keys mapped to Nacional, that designate the Einstein
+natjus,institution_spelling,notes
+Nacional,Hospital Israelita Albert Einstein,147068
+Nacional,Hospital Israelita Albert Einstein.,1795
+Nacional,HOSPITAL ISRAELITA ALBERT EINSTEIN,1764
+Nacional,HIAE,989
+Nacional,Hospital Albert Einstein,551
+Nacional,Nacional - Hospital Israelita Albert Einstein,329
+Nacional,Hospital israelita Albert Einstein,226
+Nacional,Hospital Israelita Albert Eisntein,202
+Nacional,Einstein Hospital Israelita,141
+Nacional,SBIB Hospital Israelita Albert Einstein,131
+Nacional,Hospital Israelita Albert EInstein,95
+Nacional,Hospital Israelita Albert einstein,73
+Nacional,Hospital Israelita Albert Eintein,47
+Nacional,Hospital Israelite Albert Einstein,47
+Nacional,hospital israelita albert einstein,46
+Nacional,Hospital Israelita ALbert Einstein,27
+Nacional,Einstein - Hospital Israelita,26
+Nacional,Hospital Israelita Abert Einstein,25
+Nacional,Hospital Isralita Albert Einstein,23
+Nacional,Hospital Israelita Albert Einstien,22
+Nacional,Hospital ISraelita Albert Einstein,21
+Nacional,Hospital Israelita Albert Einsten,20
+Nacional,Hospital Isarelita Albert Einstein,18
+Nacional,Hopsital Israelita Albert Einstein,16
+Nacional,Hospital Israelita Alber Einstein,16
+Nacional,Hospital Israelita ALBERT EINSTEIN,15
+Nacional,Nacional - Hospital Albert Einstein,15
+Nacional,HOSPITAL ISRAELITA  ALBERT EINSTEIN,14
+Nacional,Hospital  Israelita Albert Einstein,14
+Nacional,Hospital ALbert Einstein,14
+Nacional,Hospital Israelita Albert Einstei,14
+Nacional,Hospital Israelita albert Einstein,14
+Nacional,EINSTEIN HOSPITAL ISRAELITA,13
+Nacional,Hospita Israelita Albert Einstein,13
+Nacional,HOSPITAL ISRAELITA ALBER EINSTEIN,12
+Nacional,Hospital Israelita Albert  Einstein,12
+Nacional,Hospital Isrealita Albert Einstein,11
+Nacional,Hospital Isrelita Albert Einstein,11
+Nacional,Nacioanal - Hospital Israelita Albert Einstein,11
+Nacional,HOSPITAL ISRAELITA Albert Einstein,10
+Nacional,Hospital Israelia Albert Einstein,10
+Nacional,Hospital Israelita Albert Eistein,10
+Nacional,Hospital Israleita Albert Einstein,10
+Nacional,hospital Israelita Albert Einstein,10
+Nacional,Hospital Israelita Albert Enstein,9
+Nacional,Hospital Israelta Albert Einstein,9
+Nacional,Hospital Israeita Albert Einstein,8
+Nacional,Hospital Israelita  Albert Einstein,8
+Nacional,EINSTEIN - HOSPITAL ISRAELITA,7
+Nacional,Hospital I Albert Einstein,7
+Nacional,Hospital Israelita Albert,7
+Nacional,HOSPITAL ISRAELITA ALBERT EISNTEIN,6
+Nacional,Hospital Iraelita Albert Einstein,6
+Nacional,Hospital Israelita Albert Eiinstein,6
+Nacional,Hospital Israelita Albert Einstrein,6
+Nacional,Hospital Israelita Brasileiro Albert Einstein,6
+Nacional,Hospítal Israelita Albert Einstein,6
+Nacional,Einstein Hospital ISraelita,5
+Nacional,Hospital Israelita Albert Einsein,5
+Nacional,Hospital Isrselita Albert Einstein,5
+Nacional,Hospitral Israelita Albert Einstein,5
+Nacional,Hosptial Israelita Albert Einstein,5
+Nacional,Nacional - Hospital Isrealita Albert Einstein,5
+Nacional,SBIB Hospital Albert Einstein,5
+Nacional,HOSPITA ISRAELITA ALBERT EINSTEIN,4
+Nacional,HOSPITAL ISRAELITA ALBERT EINSTEIN.,4
+Nacional,Hopital Israelita Albert Einstein,4
+Nacional,Hospital Isaraelita Albert Einstein,4
+Nacional,Hospital Israelita Albert Einsteiin,4
+Nacional,Hospital Israelita Albert Einsteins,4
+Nacional,Hospital israelita albert einstein,4
+Nacional,SBIB Hospital Israelita Albert Einstein.,4
+Nacional,: Hospital Israelita Albert Einstein,3
+Nacional,Einstein Hospital Israelita Albert Einstein,3
+Nacional,HOSPITAL ISRAELIA ALBERT EINSTEIN,3
+Nacional,Hiospital Israelita Albert Einstein,3
+Nacional,Hospiital Israelita Albert Einstein,3
+Nacional,Hospita lsraelita Albert Einstein,3
+Nacional,Hospital Isaelita Albert Einstein,3
+Nacional,Hospital Isarelita Albert Eisntein,3
+Nacional,Hospital Israeilita Albert Einstein,3
+Nacional,Hospital Israelit Albert Einstein,3
+Nacional,Hospital Israelita,3
+Nacional,Hospital Israelita Alberrt Einstein,3
+Nacional,Hospital Israelita Albert Einstwin,3
+Nacional,Hospital Israelita Alberto Einstein,3
+Nacional,Hospital Israelita Albet Einstein,3
+Nacional,Hospital Israelita Einstein,3
+Nacional,Hospital Israelita albert einstein,3
+Nacional,Hospital Israelital Albert Einstein,3
+Nacional,Hospital Israelitas Albert Einstein,3
+Nacional,Hospital Israellita Albert Einstein,3
+Nacional,Hospital Isralelita Albert Einstein,3
+Nacional,Hospital Israrelita Albert Einstein,3
+Nacional,Hospital Israslita Albert Einstein,3
+Nacional,Hospital israelita Albert einstein,3
+Nacional,Hospital lsraelita Albert Einstein,3
+Nacional,Hospital |Israelita Albert Einstein,3
+Nacional,Hspital Israelita Albert Einstein,3
+Nacional,Instituto Israelita Albert Einstein,3
+Nacional,hospital Israelita Albert einstein,3
+Nacional,- Hospital israelita Albert Einstein,2
+Nacional,Einstein Hospital Israeltia,2
+Nacional,Einstein Hospital Isrelita,2
+Nacional,Einstein hospital Israelita,2
+Nacional,Eionstein Hospital Israelita,2
+Nacional,Eisntein - Hospital Israelita,2
+Nacional,HIAE - Hospital Israelita Albert Einstein,2
+Nacional,HOSPITAL ALBERT EINSTEIN,2
+Nacional,HOSPITAL ISRAELITA ALBERT EINSTIEN,2
+Nacional,HOSPITAL ISRAELITA ALBERT EINTEIN,2
+Nacional,Hoispital Israelita Albert Einstein,2
+Nacional,Hospital Albert Eisntein,2
+Nacional,Hospital Israeiita Albert Einstein,2
+Nacional,Hospital Israeilta Albert Einstein,2
+Nacional,Hospital Israelita ALbert EInstein,2
+Nacional,Hospital Israelita Albert Einsrtein,2
+Nacional,"Hospital Israelita Albert Einstein,",2
+Nacional,Hospital Israelita Albert Einsteini,2
+Nacional,Hospital Israelita Albert Einsteinn,2
+Nacional,Hospital Israelita Albert Einsteinq,2
+Nacional,Hospital Israelita Albert Einsteon,2
+Nacional,Hospital Israelita Albert Einstin,2
+Nacional,Hospital Israelita Albert Esintein,2
+Nacional,Hospital Israelita Allbert Einstein,2
+Nacional,Hospital Israelite Albert instein,2
+Nacional,Hospital Israeltia Albert Einstein,2
+Nacional,Hospital Israselita Albert Einstein,2
+Nacional,Hospital Isreaelita Albert Einstein,2
+Nacional,Hospital Isreelita Albert Einstein,2
+Nacional,Hospital sraelita Albert Einstein,2
+Nacional,Hospitalar Israelita Albert Einstein,2
+Nacional,Hospitall Israelita Albert Einstein,2
+Nacional,Instituto israelita albert einstein,2
+Nacional,Nacional - Hospital Israelita Albert Eisntein,2
+Nacional,hiae,2
+Nacional,CNJ Einstein,1
+Nacional,EINSTEIN,1
+Nacional,EINSTEIN HIOSPITAL ISRAELITA,1
+Nacional,EINSTEIN HOSPITALK ISRAELITA,1
+Nacional,Einstein  Hospital Israelita,1
+Nacional,Einstein Hopistal Israelita,1
+Nacional,Einstein Hospiptal Israelita,1
+Nacional,Einstein Hospita Israelita,1
+Nacional,Einstein Hospital Israeita,1
+Nacional,Einstein Hospital Israelia,1
+Nacional,Einstein Hospital Israelita.,1
+Nacional,Einstein Hospital Israelits,1
+Nacional,Einstein Hospital Isralita,1
+Nacional,Einstein Hospital israelita,1
+Nacional,Einstein Hospitla Israelita,1
+Nacional,Einstein Hosítal Israelita,1
+Nacional,Einstein hospital israelita,1
+Nacional,Einstein: Hospital Israelita,1
+Nacional,Einsten Hospital Israelita,1
+Nacional,Eionstein - Hospital Israelita,1
+Nacional,Eisntein Hospital Israelita,1
+Nacional,Gospital Israelita Albert Eisntein,1
+Nacional,HOPSITAL ISRAELITA ALBERT EINSTEIN,1
+Nacional,HOSALPITAL ISRAELITA Albert Einstein,1
+Nacional,HOSPITAL  ISRAELITA ALBERT EINSTEIN,1
+Nacional,HOSPITAL IISRAELITA ALBERT EINSTEIN,1
+Nacional,HOSPITAL ISARAELITA ALBERT EINSTEIN,1
+Nacional,HOSPITAL ISRAELITA ALBERT EINSTE,1
+Nacional,HOSPITAL ISRAELITA ALBERT EINSTEN,1
+Nacional,HOSPITAL ISRAELITA ALBERT EISTEIN,1
+Nacional,HOSPITAL ISRAELITA ALBERTEINSTEIN,1
+Nacional,HOSPITAL ISRAELITA ALBERTT EINSTEIN,1
+Nacional,HOSPITAL ISRAELITA ALBERt EINSTEIN,1
+Nacional,HOSPITAL ISRAELITA ALERT EINSTEIN,1
+Nacional,HOSPITAL ISRAELITE ALBERT EINSTEIN,1
+Nacional,HOSPITAL ISRAELOTA ALBERT EINSTEIN,1
+Nacional,HOSPITAL ISRALITA ALBERT EINSTEIN,1
+Nacional,HOSPITAL ISRELITA ALBERT EINSTEIN,1
+Nacional,HOSPÍTAL ISRAELITA ALBERT EINSTEIN,1
+Nacional,Hiospital Israelita Albert Eintein,1
+Nacional,Hiospitsl Israelita Albert Einstein,1
+Nacional,Hoapital Albert Einstein,1
+Nacional,Hoapital Israelita Albert Einstein,1
+Nacional,Hopistal Israelita Albert Einstein,1
+Nacional,Hoplital Israelita Albert Einstein,1
+Nacional,Hopsital Israelita ALbert Einstein,1
+Nacional,Hopsital Israelita Albert Eintein,1
+Nacional,Hopsital Israelita Albert Eisntein,1
+Nacional,Hospial Israelita Albert Einstein,1
+Nacional,Hospiital Israelita Albert EInstein,1
+Nacional,Hospiotal Israelita Albert Eisntein,1
+Nacional,Hospiral Israelita Albert Einstein,1
+Nacional,Hospistal Israelita Albert Einstein,1
+Nacional,Hospita Isralita Albert Einstein,1
+Nacional,Hospita lIsraelita Albert Einstein,1
+Nacional,Hospita lsralita Albert Einstein,1
+Nacional,HospitaL Israelita Albert Einstein,1
+Nacional,Hospital  Albert Einstein,1
+Nacional,Hospital  Israelita  Albert Einstein,1
+Nacional,Hospital Albert Einstein.,1
+Nacional,Hospital Albert Eintein,1
+Nacional,Hospital Albert Eistein,1
+Nacional,Hospital Albert Israelita Einstein,1
+Nacional,Hospital Albert einstein,1
+Nacional,Hospital Albert |Einstein,1
+Nacional,Hospital Alberta Einstein,1
+Nacional,Hospital IIsraelita Albert Einstein,1
+Nacional,Hospital ISraelita Albert einstein,1
+Nacional,Hospital ISraelite Albert Einstein,1
+Nacional,Hospital ISraelta Albert Einstein,1
+Nacional,Hospital Iaraelita Albert Einstein,1
+Nacional,Hospital Infantil Albert Einstein,1
+Nacional,Hospital Israaelita Albert Einstein,1
+Nacional,Hospital Israeelita Albert Einstein,1
+Nacional,Hospital Israeelita Albert Einstein.,1
+Nacional,Hospital Israelia Albert Eisntein,1
+Nacional,Hospital Israeliat Albert Einstein,1
+Nacional,Hospital Israeliata Albert Einstein,1
+Nacional,Hospital Israelidade alber Einstein,1
+Nacional,Hospital Israelielita Albert Einstein,1
+Nacional,Hospital Israelieta Albert Einstein,1
+Nacional,Hospital Israeliita Albert Einstein,1
+Nacional,Hospital Israelila Albert Einstein,1
+Nacional,Hospital Israelira Albert Einstein,1
+Nacional,Hospital Israelirta,1
+Nacional,Hospital Israelirta Albert Einstein,1
+Nacional,Hospital Israelita ALbert eintein,1
+Nacional,Hospital Israelita Akbert Ei,1
+Nacional,Hospital Israelita Alb ert Einstein,1
+Nacional,Hospital Israelita Albeert Einstein,1
+Nacional,Hospital Israelita Albeet Einstein,1
+Nacional,Hospital Israelita Alber,1
+Nacional,Hospital Israelita Alber einstein,1
+Nacional,Hospital Israelita Alberr Eintein,1
+Nacional,Hospital Israelita Albert /einstein,1
+Nacional,Hospital Israelita Albert EINSTEIN,1
+Nacional,Hospital Israelita Albert EInsrtein,1
+Nacional,Hospital Israelita Albert Einatein,1
+Nacional,Hospital Israelita Albert Einbstein,1
+Nacional,Hospital Israelita Albert Einsetein,1
+Nacional,Hospital Israelita Albert Einsetin,1
+Nacional,Hospital Israelita Albert Einsitei,1
+Nacional,Hospital Israelita Albert Einsrein,1
+Nacional,Hospital Israelita Albert Einsstein,1
+Nacional,Hospital Israelita Albert Einste,1
+Nacional,Hospital Israelita Albert Einsteim,1
+Nacional,Hospital Israelita Albert Einstein - NAT/JUS - AC,1
+Nacional,Hospital Israelita Albert Einstein179,1
+Nacional,Hospital Israelita Albert Einstein\,1
+Nacional,Hospital Israelita Albert Einstein`ao,1
+Nacional,Hospital Israelita Albert Einsteinb,1
+Nacional,Hospital Israelita Albert Einsteinm,1
+Nacional,Hospital Israelita Albert Einsteinqn,1
+Nacional,Hospital Israelita Albert Einsteinv,1
+Nacional,Hospital Israelita Albert Einstein˜ao,1
+Nacional,Hospital Israelita Albert Einsteion,1
+Nacional,Hospital Israelita Albert Einstetin,1
+Nacional,Hospital Israelita Albert Einstrin,1
+Nacional,Hospital Israelita Albert Einsttein,1
+Nacional,Hospital Israelita Albert Einstwein,1
+Nacional,Hospital Israelita Albert Einteins,1
+Nacional,Hospital Israelita Albert Einteisn,1
+Nacional,Hospital Israelita Albert Eintesin,1
+Nacional,Hospital Israelita Albert Eisnteiin,1
+Nacional,Hospital Israelita Albert Eisntein.,1
+Nacional,Hospital Israelita Albert Ensten,1
+Nacional,Hospital Israelita Albert eisntein,1
+Nacional,Hospital Israelita Albert enstein,1
+Nacional,Hospital Israelita Albert. Einstein,1
+Nacional,Hospital Israelita AlbertEinstein,1
+Nacional,Hospital Israelita Alberti Einstein,1
+Nacional,Hospital Israelita Alberty Einstein,1
+Nacional,Hospital Israelita Albett Einsrtein,1
+Nacional,Hospital Israelita Albett Einstein,1
+Nacional,Hospital Israelita Albsert Einstein,1
+Nacional,Hospital Israelita Alkbert Einstein,1
+Nacional,Hospital Israelita Alobert Einstein,1
+Nacional,Hospital Israelita Alrbert Einstein,1
+Nacional,Hospital Israelita Alter Einstein,1
+Nacional,Hospital Israelita Açbert Einstein,1
+Nacional,Hospital Israelita Israelita Albert Einstein,1
+Nacional,Hospital Israelita Labert Einstein,1
+Nacional,Hospital Israelita lbert Einstein,1
+Nacional,Hospital Israelita;ita Albert Einstein,1
+Nacional,Hospital IsraelitaAlbert Einstei,1
+Nacional,Hospital IsraelitaAlbert Einstein,1
+Nacional,Hospital Israelitra Albert Einstein,1
+Nacional,Hospital Israelits SLbert Einstein,1
+Nacional,Hospital Israelitta Albert Einstein,1
+Nacional,Hospital Israerlita Albert Einstein,1
+Nacional,Hospital Israetlia Albert Einstein,1
+Nacional,Hospital Israeçita Albert Einstein,1
+Nacional,Hospital Isralieta Albert Einstein,1
+Nacional,Hospital Isralita Albert EInstein,1
+Nacional,Hospital Isralita Altbert Einstein,1
+Nacional,Hospital Isranelita Albert Einstei,1
+Nacional,Hospital Israsaelita Albert Einstein,1
+Nacional,Hospital Isratelita Albert Einstein,1
+Nacional,Hospital Isrealita Albert EInstein,1
+Nacional,Hospital Isrealita Albert Einsten,1
+Nacional,Hospital Isrraelita Albert Einstein,1
+Nacional,Hospital Isrsaelita Albert Einstein,1
+Nacional,Hospital Isrtaelita Albert Einstein,1
+Nacional,Hospital Istaelita Albert Einstein,1
+Nacional,Hospital Istraelita Albert Einstein,1
+Nacional,Hospital Nacional Albert Einstein,1
+Nacional,Hospital iIsraelita Albert Einstein,1
+Nacional,Hospital insraelita alber Einstein,1
+Nacional,Hospital israeliat Albert Einstein,1
+Nacional,Hospital israelita,1
+Nacional,Hospital israelita ALbert Einstein,1
+Nacional,Hospital israelita Abert Einsten,1
+Nacional,Hospital israelita Alber Einstein,1
+Nacional,Hospital israelita Albert Crohn,1
+Nacional,Hospital israelita Albert EInstein,1
+Nacional,Hospital israelita Albert Einstein Einstein,1
+Nacional,Hospital israelite alvert einstein =,1
+Nacional,Hospital isrselita Albert Einstein,1
+Nacional,HospitalIsraelita Albert Einstein,1
+Nacional,Hospitalm Israelita Albert Einstein,1
+Nacional,Hospitial Israelita Albert Einstein,1
+Nacional,Hospitl Israelita Albert Einstein,1
+Nacional,Hospitla Israelita Albert Einstein,1
+Nacional,Hospitnsteinal Israelita Albert Ei,1
+Nacional,Hospiyal Israelita Albert Einstein,1
+Nacional,Hosptila Israrelita ALbert Einstein,1
+Nacional,Hosputal israelita Albert einstein,1
+Nacional,Hsopital Israelita Albert Einstein,1
+Nacional,Instituto Israelita albert einstein,1
+Nacional,Nacioanal - Hospital Israelita Albert Eisntein,1
+Nacional,Nacioanal - Hospital Israelite Albert Einstein,1
+Nacional,Nacional - Hoapital Israelita Albert Einstein,1
+Nacional,Nacional - Hospita Israelita Albert Einstein,1
+Nacional,Nacional - Hospitak Albert Einstein,1
+Nacional,Nacional - Hospital Isaraelita Albert Einstein,1
+Nacional,Nacional - Hospital Israeita Albert Einstein,1
+Nacional,Nacional - Hospital Israelita,1
+Nacional,Nacional - Hospital Israelita Alber Einstein,1
+Nacional,Nacional - Hospital Israelita Albert Eiinstein,1
+Nacional,Nacional - Hospital Isrelita Albert Einstein,1
+Nacional,Nacional - Hospital israelita Albert Einstein,1
+Nacional,Nacional - Hospitl Israelita Albert Einstein,1
+Nacional,Nacional - Hospitral Israelita Albert Einstein,1
+Nacional,Nacional Hospital Israelita Albert Einstein - Hospital Israelita Albert Einstein,1
+Nacional,SBIB Hospital IIsraelita Albert Einstein,1
+Nacional,SBIB Hospital Israelita Albert Einstei,1
+Nacional,SBIB Hospital Israelita Albert Eisntein,1
+Nacional,Sociedade Beneficente Israelita Albert Einstein,1
+Nacional,Sociedade Beneficente Israelita Brasileira Albert Einstein,1
+Nacional,Sociedade Beneficente Israelita Brasileira Hospital Albert Einstein,1
+Nacional,hospiral israelita albert einstein,1
+Nacional,hospital Albert Einstein,1
+Nacional,hospital ISRAELITA ALBERT EINSTEIN,1
+Nacional,hospital Israelita albert einstein,1
+Nacional,hospital israelita Albert Einstein,1
+Nacional,|Hospital Israelita Albert Einstein,1
+

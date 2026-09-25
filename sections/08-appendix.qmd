@@ -1,0 +1,81 @@
+Este apêndice acompanha o artigo como material suplementar e reúne o que o corpo do texto resume: a codificação das variáveis, a especificação e o ajuste dos dois modelos, as versões por NatJus dos dois modelos com o contraste na escala do logito, o inventário do que o estimador de efeitos fixos descartou e uma tabela descritiva que a figura do corpo condensa. As tabelas são rotuladas por letra para não se confundirem com as do artigo. Todos os números vêm dos mesmos arquivos carimbados que alimentam o corpo, e a fonte é a base de notas técnicas do e-NatJus, com {{< var sample_total >}} notas sobre medicamentos em {{< var n_origins >}} NatJus, entre {{< var series_start >}} e {{< var series_end >}}.
+
+# Apêndice A. Codificação das variáveis {.unnumbered}
+
+A @tbl-variables lista as variáveis dos dois modelos e a codificação aplicada. Cinco regras valem para todas. O nome do medicamento é normalizado só por caixa, acento e espaços, sem unir sais nem associações. O campo do CID é texto livre e às vezes traz mais de um código, com ou sem ponto; extraímos os códigos que seguem o padrão da CID-10, ficamos com o primeiro, normalizamos a pontuação e usamos a categoria de três caracteres (por exemplo, E10 para E10.9) como nível dos modelos, guardando o código completo e o capítulo para descrição. Campo não preenchido ou não aplicável recebe o nível auxiliar N/I e nunca é convertido em resposta negativa. A manifestação da Conitec preserva os três valores substantivos, com "Não avaliada" como referência; o sexo tem "Feminino" como referência, a representação jurídica tem "Defensoria Pública" e as seis variáveis clínicas e regulatórias têm "Não". O tempo é o número de meses decorridos desde maio de 2019, como tendência linear, e a leitura anual é doze vezes o coeficiente mensal. As seis variáveis clínicas e regulatórias formam duas famílias, a do medicamento (registro na Anvisa, disponibilidade no SUS, oncológico, biossimilar) e a do caso (conformidade da indicação, protocolo), e as duas entram nos dois modelos.
+
+{{< include tables/manuscript/kit-variables.md >}}
+
+Quatro condições de preenchimento viraram marcação, e não filtro, porque sua frequência varia por NatJus e por período, e excluí-las retiraria trechos inteiros da série de alguns NatJus: rótulo de situação da Anvisa no campo do medicamento ({{< var flag_anvisa_label >}} notas), CID não registrado ({{< var flag_icd_missing >}}, quase todas de 2021, de BA, MT e DFT), sexo não registrado ({{< var flag_sex_missing >}}, quase todas da BA a partir de 31 de março de 2026) e data de emissão obtida da tabela de finalização, e não do aviso de emissão ({{< var flag_date_not_strict >}}). As quatro não se sobrepõem e somam {{< var flags_total >}} notas. Nas três primeiras, o campo entra nos modelos como N/I; a quarta só afasta a nota da análise de tendência temporal.
+
+# Apêndice B. Especificações e estimativas dos modelos {.unnumbered}
+
+Os dois modelos têm o mesmo desfecho, a conclusão favorável da nota técnica, a mesma ligação logito e a mesma parte fixa: manifestação da Conitec sobre o medicamento, sexo do paciente, representação jurídica, as seis variáveis clínicas e regulatórias registradas na nota e uma tendência linear no mês de emissão. Diferem no tratamento do NatJus, do medicamento e da categoria CID. O Modelo 2 usa indicadores de NatJus, com o NatJus Nacional como referência, e absorve medicamento e categoria CID como efeitos fixos. O Modelo 1 trata os três como interceptos aleatórios cruzados, e a divergência entre NatJus é o desvio-padrão do intercepto de NatJus. A @tbl-fits resume o ajuste de cada um: notas de entrada e estimadas, convergência, identificação, log-verossimilhança, número de parâmetros e AIC. Os valores de AIC pertencem a construções de verossimilhança diferentes, a condicional do estimador de efeitos fixos e a marginal do modelo misto, e por isso não comparam um modelo com o outro.
+
+{{< include tables/manuscript/kit-fits.md >}}
+
+A @tbl-model-1-2-origins apresenta, para cada NatJus, a taxa favorável bruta, a probabilidade padronizada e o contraste em relação ao NatJus Nacional segundo o Modelo 1, com o intervalo de 95% de confiança. A probabilidade padronizada é a que o NatJus teria se avaliasse a composição de casos da amostra inteira, e não só os casos que de fato recebeu; a diferença entre ela e a taxa bruta mede quanto da taxa observada se deve à carteira de pedidos do NatJus. O contraste está na escala do logito, com o Nacional em zero. A @fig-adjusted-origin-effects desenha esses contrastes; a linha tracejada em zero é o Nacional, referência do modelo, e valores positivos indicam maior propensão a concluir favoravelmente que o Nacional para a mesma composição de casos.
+
+{{< include tables/manuscript/kit-model-1-2-origins.md >}}
+
+![Contrastes ajustados dos NatJus locais em relação ao Nacional, Modelo 1](figures/kit-adjusted-origin-effects.png){#fig-adjusted-origin-effects}
+
+::: {custom-style="Fonte"}
+Fonte: elaboração própria a partir das notas técnicas do e-NatJus (CNJ).
+:::
+
+::: {custom-style="Notas"}
+Notas: contraste ajustado de cada um dos {{< var n_local_origins >}} NatJus locais em relação ao NatJus Nacional na escala do logito, com intervalo a 95%, em ordem decrescente do contraste. Valor positivo indica maior propensão a concluir favoravelmente que o Nacional para a mesma composição de casos. O Nacional não tem linha própria porque é a referência do modelo, marcada pela linha tracejada em zero; os valores são os da @tbl-model-1-2-origins.
+:::
+
+A @tbl-model-1-1-origins apresenta as mesmas quantidades segundo o Modelo 2. A última coluna dá a cobertura da estimação: a fração das notas do NatJus que o estimador conservou depois de remover os níveis de medicamento e de CID sem variação na conclusão, uma limitação própria do Modelo 2 que o Modelo 1 não tem.
+
+{{< include tables/manuscript/kit-model-1-1-origins.md >}}
+
+O estimador de efeitos fixos do Modelo 2 descarta internamente os níveis de medicamento e de categoria CID em que todas as notas têm a mesma conclusão, porque um nível sem variação não contribui para a verossimilhança condicional. A @tbl-fixest-removed conta esses níveis e as notas que deixaram de ser estimadas por causa deles: {{< var fixest_discarded_notes >}} notas, {{< var fixest_discarded_share >}} da amostra. Nenhum tratamento de nível raro foi aplicado nesta versão, de modo que a perda é a que a regra do estimador produz sobre a amostra tal como está.
+
+{{< include tables/manuscript/kit-fixest-removed.md >}}
+
+# Apêndice C. Resultados complementares sobre a Conitec {.unnumbered}
+
+A figura do corpo sobre a Conitec apresenta as taxas brutas. A @fig-conitec-adjusted-by-natjus apresenta as probabilidades padronizadas pelo Modelo 1 dentro de cada manifestação da Conitec, mantendo a mesma ordem de NatJus e a escala de 0% a 100% para permitir a comparação com o corpo.
+
+![Probabilidade padronizada de conclusão favorável por NatJus e manifestação da Conitec, Modelo 1](figures/kit-conitec-adjusted-by-natjus.png){#fig-conitec-adjusted-by-natjus}
+
+::: {custom-style="Fonte"}
+Fonte: elaboração própria a partir das notas técnicas do e-NatJus (CNJ).
+:::
+
+::: {custom-style="Notas"}
+Notas: dentro de cada manifestação da Conitec, o Modelo 1 prevê cada nota como se tivesse sido avaliada por cada NatJus, mantendo as demais características registradas, e calcula a média dessas probabilidades. Os NatJus seguem a ordem decrescente de taxa favorável geral da figura bruta do corpo, com um painel por manifestação. Não há intervalos de confiança para as probabilidades padronizadas nesta versão.
+:::
+
+A @tbl-conitec-rates reúne, para a amostra inteira, as taxas favoráveis por manifestação da Conitec que o corpo do artigo cita.
+
+{{< include tables/manuscript/kit-conitec-rates.md >}}
+
+# Apêndice D. Resultados descritivos complementares {.unnumbered}
+
+A @tbl-production traz, por NatJus, a produção acumulada, o primeiro e o último mês com nota e a taxa de conclusão favorável que a figura de taxas do corpo apresenta.
+
+{{< include tables/manuscript/production-by-natjus.md >}}
+
+As três tabelas seguintes detalham a comparação por par medicamento × CID. A @tbl-pair-thresholds conta os pares segundo a distância entre a maior e a menor taxa favorável; a @tbl-pair-extremes lista os pares em que essa distância alcançou 100 pontos percentuais; e a @tbl-local-national apresenta, para cada NatJus local, os pares de maior e menor diferença em relação ao Nacional.
+
+{{< include tables/manuscript/kit-pair-thresholds.md >}}
+
+```{=typst}
+// As duas tabelas largas em página deitada, com a linha mais baixa para a
+// Tabela J caber em duas páginas; o Word ignora este bloco.
+#set page(flipped: true)
+#set table(inset: (x: 5pt, y: 3.5pt))
+```
+
+{{< include tables/manuscript/kit-pair-extremes.md >}}
+
+{{< include tables/manuscript/kit-local-national.md >}}
+
+```{=typst}
+#set page(flipped: false)
+#set table(inset: (x: 5pt, y: 5pt))
+```

@@ -1,0 +1,338 @@
+== nível 4, commit f3148e1abe14db8d6485606a9fcf8508b49302fb
+== Rscript R/00-setup.R
+Pacotes presentes e base conferida: 504.345 notas.
+== Rscript R/01-sample.R
+Loaded 504,345 technical notes.
+
+Provenance:
+  base_dataset: BrunoDCDO/enatjus_v2
+  base_revision: be990d4dc17ec24274419c6ff0460844700270a9
+  base_file: data/base_enatjus_tratada.parquet
+  base_sha256: eec865c49d09ae57ed606b531312ca7d8379726a30e06225ff27763965aa2390
+  base_bytes: 521311996
+  base_rows: 504345
+  base_generated_at: 2026-09-24T18:49:57-03:00
+  collector_commit: ad40ae9a97623af141c43479ad70374ffdc76a47
+  enatjus_commit: d2ee1a07e8bd54fa0baa237bdee760a334958389
+  sample_built_at: 2026-09-24T22:28:10-0300
+
+Attrition:
+# A tibble: 10 × 4
+   step                                   removed_false removed_na remaining
+   <chr>                                          <int>      <int>     <int>
+ 1 technical notes loaded                             0          0    504345
+ 2 emitted by 2026-08-31                           2496          0    501849
+ 3 medicines only                                219878          0    281971
+ 4 conclusion recorded                               11          0    281960
+ 5 NatJus RJ excluded                              5611          0    276349
+ 6 emission date recorded                          2358          0    273991
+ 7 series starts 2019-05                             18          0    273973
+ 8 origin mapped by the NatJus dictionary             0          0    273973
+ 9 note carries an origin                            13          0    273960
+10 NatJus with at least 100 notes                   284          0    273676
+
+Sample: 273,676 notes, 29 NatJus, months 2019-05-01 to 2026-08-01.
+== Rscript R/02-institutions.R
+Loaded 504,345 technical notes.
+
+Institutions: 37 NatJus, 29 in the sample.
+
+Coverage over the sampled NatJus:
+# A tibble: 10 × 4
+   variable                natjus_with_value natjus_in_sample share
+   <chr>                               <int>            <int> <dbl>
+ 1 founded_year                            6               29 0.207
+ 2 founded_by                             11               29 0.379
+ 3 founded_after                           2               29 0.069
+ 4 court                                  11               29 0.379
+ 5 health_secretariat                     15               29 0.517
+ 6 university                             12               29 0.414
+ 7 non_university_hospital                12               29 0.414
+ 8 pre_2016                               12               29 0.414
+ 9 first_note                             29               29 1    
+10 last_note                              29               29 1    
+== Rscript R/03-covariates.R
+# A tibble: 18 × 10
+   variable   source_field denominator raw_levels baseline_levels derived_levels
+   <chr>      <chr>              <int>      <int>           <int>          <int>
+ 1 medicine   txtDcb            273676      10455           10455           8829
+ 2 icd_full   txtCid            273676       4038            3984           3654
+ 3 icd_categ… txtCid            273676       4038            3984           1104
+ 4 icd_chapt… txtCid            273676       4038            3984             23
+ 5 cov_selCo… selConclusao      273676          2               2              2
+ 6 cov_selTi… selTipoTecn…      273676          1               1              1
+ 7 cov_selEs… selEsfera         273676          3               3              3
+ 8 cov_selSt… selStaGenero      273676          3               3              3
+ 9 cov_selDe… selDefensor…      273676          3               3              3
+10 cov_selRe… selRecomend…      273676          3               3              3
+11 cov_selIn… selIndicaca…      273676          5               5              3
+12 cov_selPr… selPrevisto…      273676          5               5              3
+13 cov_selRe… selRegistro…      273676          3               3              3
+14 cov_selDi… selDisponiv…      273676          5               5              3
+15 cov_selOn… selOncologi…      273676          5               5              3
+16 cov_selEx… selExisteBi…      273676          3               2              3
+17 cov_selAl… selAlegacao…      273676          3               3              3
+18 cov_selSi… selSituacao…      273676          4               4              3
+# ℹ 4 more variables: levels_under_10 <int>, notes_in_levels_under_10 <int>,
+#   missing_notes <int>, changed_from_baseline <int>
+# A tibble: 12 × 10
+   scope          variable   denominator medicines missing_notes unanimous_notes
+   <chr>          <chr>            <int>     <int>         <int>           <int>
+ 1 all_notes      selIndica…      273676      8829         14337           10447
+ 2 all_notes      selPrevis…      273676      8829         15722           10719
+ 3 all_notes      selRegist…      273676      8829           800           67386
+ 4 all_notes      selDispon…      273676      8829          7180           20940
+ 5 all_notes      selOncolo…      273676      8829          5561           22830
+ 6 all_notes      selExiste…      273676      8829         23091           16979
+ 7 known_medicine selIndica…      272890      8828         14282           10447
+ 8 known_medicine selPrevis…      272890      8828         15654           10719
+ 9 known_medicine selRegist…      272890      8828           800           67386
+10 known_medicine selDispon…      272890      8828          7147           20940
+11 known_medicine selOncolo…      272890      8828          5536           22830
+12 known_medicine selExiste…      272890      8828         23074           16979
+# ℹ 4 more variables: unanimous_fraction <dbl>, unanimous_missing_notes <int>,
+#   substantive_unanimous_notes <int>, unknown_medicine_notes_excluded <int>
+# A tibble: 13 × 8
+   family origin       notes_before_floor notes_in_sample missing_institution_…¹
+   <chr>  <chr>                     <int>           <int>                  <int>
+ 1 AM     AM                            6               0                      0
+ 2 AM     AM/SEMSA                     82               0                      0
+ 3 AM     AM/SES                      739             739                      0
+ 4 PR     PR                         6327            6327                      0
+ 5 PR     PR/CAMS                     771             771                      0
+ 6 PR     PR/CHC-UFPR                  58               0                      0
+ 7 PR     PR/CHR                      159             159                      0
+ 8 PR     PR/UEL                      204             204                      0
+ 9 RS     RS                           88               0                      0
+10 RS     RS/DMJ                    13012           13012                      0
+11 RS     TelessaúdeR…              11421           11421                      0
+12 SP     SP                        17288           17288                      0
+13 SP     SP/HC                       145             145                      0
+# ℹ abbreviated name: ¹​missing_institution_notes
+# ℹ 3 more variables: recorded_institutions <int>, first_month <date>,
+#   last_month <date>
+== Rscript R/04-origins.R
+# A tibble: 21 × 4
+   check                                         expected observed passed
+   <chr>                                         <chr>    <chr>    <lgl> 
+ 1 map rows                                      13       13       TRUE  
+ 2 pre-floor IDs are unique                      273960   273960   TRUE  
+ 3 sample IDs are unique                         273734   273734   TRUE  
+ 4 covariate IDs match sample                    273734   273734   TRUE  
+ 5 canonical origin matches analytical origin    273734   273734   TRUE  
+ 6 attrition ends at sample rows                 273734   273734   TRUE  
+ 7 production notes sum to sample rows           273734   273734   TRUE  
+ 8 production origins match sample               25       25       TRUE  
+ 9 historical sample IDs accounted for           273676   273676   TRUE  
+10 no IDs exit the historical sample             0        0        TRUE  
+11 pre-floor rows                                273960   273960   TRUE  
+12 analysis rows                                 273734   273734   TRUE  
+13 analysis origins                              25       25       TRUE  
+14 removed by analytical floor                   226      226      TRUE  
+15 entered IDs                                   58       58       TRUE  
+16 entered PR/CHC-UFPR IDs                       58       58       TRUE  
+17 received label differs from analytical origin 1337     1337     TRUE  
+18 PR rows                                       7519     7519     TRUE  
+19 SP rows                                       17433    17433    TRUE  
+20 production rows                               32       32       TRUE  
+21 historical products unchanged                 1        1        TRUE  
+Final analysis sample: 273,734 notes in 25 analytical origins.
+== Rscript R/08-final-analysis.R
+2026-09-24 22:30:10 stage: descriptive
+2026-09-24 22:30:16 stage: main models
+2026-09-24 22:32:44 fit model_1_2: converged, max |gradient| 6.22e-11
+2026-09-24 22:33:04 stage: likelihood-ratio candidates
+2026-09-24 22:35:38 fit model_1_2_without_origin: converged, max |gradient| 4.09e-10
+2026-09-24 22:36:47 fit model_1_2_without_clinical: converged, max |gradient| 2.42e-10
+2026-09-24 22:36:47 stage: profile interval of the NatJus standard deviation
+2026-09-24 22:43:09 stages done
+2026-09-24 22:43:12 loading completed checkpoints for publication without fitting
+2026-09-24 22:43:12 reusing checkpoint data/model-fits/checkpoints/stages/descriptive.rds
+2026-09-24 22:43:17 reusing checkpoint data/model-fits/checkpoints/stages/main-models.rds
+2026-09-24 22:43:17 reusing checkpoint data/model-fits/checkpoints/stages/reporting-candidates.rds
+2026-09-24 22:43:17 reusing checkpoint data/model-fits/checkpoints/profile/model-1-2-origin-sd.rds
+2026-09-24 22:43:17 publishing stamped final-analysis outputs
+2026-09-24 22:52:46 done
+== Rscript R/11-conitec-stratified-standardization.R
+2026-09-24 22:52:51 frame rebuilt: 273734 notes, 25 origins
+2026-09-24 22:52:53 standardizing within each Conitec manifestation
+2026-09-24 23:02:52 recomposition check passed, max gap 1.11e-16
+2026-09-24 23:02:52 wrote tables/analysis/kit-conitec-stratified-standardization.csv
+== Rscript R/06-figures.R
+gravou figures/favourable-rate-by-natjus.png
+== Rscript R/07-manuscript-tables.R
+gravou tables/manuscript/attrition.md
+gravou tables/manuscript/production-by-natjus.md
+== Rscript R/10-manuscript-numbers.R
+gravou tables/analysis/kit-production-by-origin-year.csv
+gravou _variables.yml com 337 variáveis
+== Rscript R/09-writing-kit.R
+gravou tables/manuscript/kit-conitec-rates.md
+gravou figures/kit-conitec-rates-by-natjus.png
+gravou figures/kit-conitec-adjusted-by-natjus.png
+gravou tables/manuscript/kit-pair-thresholds.md
+gravou figures/kit-pair-dispersion.png
+gravou tables/manuscript/kit-pair-extremes.md
+gravou tables/manuscript/kit-local-national.md
+gravou tables/manuscript/kit-model-1-2-origins.md
+gravou tables/manuscript/kit-model-1-1-origins.md
+gravou figures/kit-adjusted-origin-effects.png
+gravou figures/kit-standardized-probability.png
+gravou tables/manuscript/kit-fixed-effects.md
+gravou figures/kit-production-by-year.png
+gravou tables/manuscript/kit-fixest-removed.md
+gravou tables/manuscript/kit-fits.md
+== Rscript R/13-attrition-flowchart.R
+gravou figures/kit-attrition-flowchart.png
+== comparação com os arquivos versionados
+Arquivos que diferem dos versionados: 24 
+
+Exibição que mudou (confira se é só o último dígito de um arredondamento):
+  _variables.yml: só carimbos e hashes
+
+Dados idênticos e resultados numéricos dentro da tolerância.
+[1m[34m[ 1/12] paper.qmd[39m[22m
+[1m[34m[ 2/12] appendix.qmd[39m[22m
+[1m[34m[ 3/12] report.qmd[39m[22m
+[typst]: Compiling report.typ to report.pdf...DONE
+
+[1m[34m[ 4/12] sections/00-front-matter.qmd[39m[22m
+[1m[34m[ 5/12] sections/01-introduction.qmd[39m[22m
+[1m[34m[ 6/12] sections/02-institutional-context.qmd[39m[22m
+[1m[34m[ 7/12] sections/03-data-and-methods.qmd[39m[22m
+[1m[34m[ 8/12] sections/04-results.qmd[39m[22m
+[1m[34m[ 9/12] sections/05-discussion.qmd[39m[22m
+[1m[34m[10/12] sections/06-final-remarks.qmd[39m[22m
+[1m[34m[11/12] sections/07-declarations.qmd[39m[22m
+[1m[34m[12/12] sections/07-references.qmd[39m[22m
+
+[1m[34mRunning script 'uv'[39m[22m
+Installed 3 packages in 2ms
+formatado sections/07-references.docx
+formatado sections/06-final-remarks.docx
+formatado sections/04-results.docx
+formatado sections/02-institutional-context.docx
+formatado sections/00-front-matter.docx
+formatado appendix.docx
+formatado paper.docx
+formatado sections/01-introduction.docx
+formatado sections/03-data-and-methods.docx
+formatado sections/05-discussion.docx
+formatado sections/07-declarations.docx
+
+Output created: sections/07-references.docx
+
+Installed 7 packages in 12ms
+docxcompose/properties.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+composto paper-with-appendix.docx
+[1mpandoc -M neutro=true --output report.typ[22m
+  to: typst-citations
+  standalone: true
+  default-image-extension: svg
+  wrap: none
+  number-sections: true
+  shift-heading-level-by: 0
+  variables: {}
+  
+[1mmetadata[22m
+  section-numbering: 1.1.a
+  lang: pt-BR
+  fig-cap-location: top
+  tbl-cap-location: top
+  crossref:
+    title-delim: ':'
+  bibliography:
+    - references.bib
+  csl: csl/associacao-brasileira-de-normas-tecnicas.csl
+  link-citations: true
+  engines:
+    - path: /opt/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  title: 'Judicialização da saúde e as divergências entre os Núcleos de Apoio Técnico do Judiciário (NatJus): uma análise empírica'
+  series: LabDados Working Paper Series
+  series-number: '1'
+  short-title: As divergências entre os NatJus
+  author:
+    - name: Bruno da Cunha de Oliveira
+    - name: Daniel Wei Liang Wang
+    - name: Julio Trecenti
+    - name: Beatriz Brajal
+  date: today
+  date-format: D [de] MMMM [de] YYYY
+  secoes-continuas: true
+  papersize: a4
+  font-paths:
+    - typst/fonts
+  
+[typst]: Compiling report.typ to report.pdf...DONE
+
+
+Output created: report-neutro.pdf
+
+[1mpandoc [22m
+  to: typst-citations
+  output-file: report.typ
+  standalone: true
+  default-image-extension: svg
+  wrap: none
+  number-sections: true
+  shift-heading-level-by: 0
+  variables: {}
+  
+[1mmetadata[22m
+  section-numbering: 1.1.a
+  lang: pt-BR
+  fig-cap-location: top
+  tbl-cap-location: top
+  crossref:
+    title-delim: ':'
+  bibliography:
+    - references.bib
+  csl: csl/associacao-brasileira-de-normas-tecnicas.csl
+  link-citations: true
+  engines:
+    - path: /opt/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  title: 'Judicialização da saúde e as divergências entre os Núcleos de Apoio Técnico do Judiciário (NatJus): uma análise empírica'
+  series: LabDados Working Paper Series
+  series-number: '1'
+  short-title: As divergências entre os NatJus
+  author:
+    - name: Bruno da Cunha de Oliveira
+    - name: Daniel Wei Liang Wang
+    - name: Julio Trecenti
+    - name: Beatriz Brajal
+  date: today
+  date-format: D [de] MMMM [de] YYYY
+  secoes-continuas: true
+  papersize: a4
+  font-paths:
+    - typst/fonts
+  
+[typst]: Compiling report.typ to report.pdf...DONE
+
+
+Output created: report.pdf
+
+	Command being timed: "tools/replicate.sh 4"
+	User time (seconds): 1914.21
+	System time (seconds): 261.07
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 35:19.98
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 10694352
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 81
+	Minor (reclaiming a frame) page faults: 258502652
+	Voluntary context switches: 143864
+	Involuntary context switches: 51317
+	Swaps: 0
+	File system inputs: 24160
+	File system outputs: 1367560
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

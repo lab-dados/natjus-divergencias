@@ -1,0 +1,51 @@
+# base_dataset: BrunoDCDO/enatjus_v2
+# base_revision: be990d4dc17ec24274419c6ff0460844700270a9
+# base_file: data/base_enatjus_tratada.parquet
+# base_sha256: eec865c49d09ae57ed606b531312ca7d8379726a30e06225ff27763965aa2390
+# base_bytes: 521311996
+# base_rows: 504345
+# base_generated_at: 2026-09-24T18:49:57-03:00
+# collector_commit: ad40ae9a97623af141c43479ad70374ffdc76a47
+# enatjus_commit: d2ee1a07e8bd54fa0baa237bdee760a334958389
+# analysis_built_at: 2026-09-24T22:29:24-0300
+# historical_sample_sha256: 8f4dabdc2e945b48dda95264d49f22642e8f989d9d71362d65a29ce368fb827b
+# origin_map_sha256: 2304b9ddb30f585aca56fc87b9d71e7c8372911f690f6878de5c045d93f7f0b0
+# population: final_analysis_sample
+# population_rows: 273734
+origin_received,origin_family,analysis_origin,origin_identification,notes_before_floor,notes_previous_sample,notes_analysis_sample,received_differs_from_analysis
+AC,AC,AC,not_adjudicated,384,384,384,FALSE
+AL,AL,AL,not_adjudicated,2181,2181,2181,FALSE
+AM,AM,AM,state_unidentified,6,0,0,FALSE
+AM/SEMSA,AM,AM/SEMSA,specific_retained,82,0,0,FALSE
+AM/SES,AM,AM/SES,specific_retained,739,739,739,FALSE
+AP,AP,AP,not_adjudicated,9,0,0,FALSE
+BA,BA,BA,not_adjudicated,8539,8539,8539,FALSE
+CE,CE,CE,not_adjudicated,2300,2300,2300,FALSE
+DFT,DFT,DFT,not_adjudicated,3743,3743,3743,FALSE
+ES,ES,ES,not_adjudicated,3209,3209,3209,FALSE
+GO,GO,GO,not_adjudicated,1429,1429,1429,FALSE
+MA,MA,MA,not_adjudicated,2387,2387,2387,FALSE
+MG,MG,MG,not_adjudicated,40,0,0,FALSE
+MS,MS,MS,not_adjudicated,6888,6888,6888,FALSE
+MT,MT,MT,not_adjudicated,9572,9572,9572,FALSE
+Nacional,Nacional,Nacional,not_adjudicated,169660,169660,169660,FALSE
+PA,PA,PA,not_adjudicated,695,695,695,FALSE
+PB,PB,PB,not_adjudicated,2489,2489,2489,FALSE
+PE,PE,PE,not_adjudicated,3325,3325,3325,FALSE
+PI,PI,PI,not_adjudicated,120,120,120,FALSE
+PR,PR,PR,state_aggregate,6327,6327,6327,FALSE
+PR/CAMS,PR,PR,state_aggregate,771,771,771,TRUE
+PR/CHC-UFPR,PR,PR,state_aggregate,58,0,58,TRUE
+PR/CHR,PR,PR,state_aggregate,159,159,159,TRUE
+PR/UEL,PR,PR,state_aggregate,204,204,204,TRUE
+RN,RN,RN,not_adjudicated,1446,1446,1446,FALSE
+RO,RO,RO,not_adjudicated,1,0,0,FALSE
+RR,RR,RR,not_adjudicated,495,495,495,FALSE
+RS,RS,RS,state_unidentified,88,0,0,FALSE
+RS/DMJ,RS,RS/DMJ,specific_retained,13012,13012,13012,FALSE
+TelessaúdeRS-UFRGS,RS,TelessaúdeRS-UFRGS,specific_retained,11421,11421,11421,FALSE
+SC,SC,SC,not_adjudicated,1430,1430,1430,FALSE
+SE,SE,SE,not_adjudicated,2544,2544,2544,FALSE
+SP,SP,SP,state_aggregate,17288,17288,17288,FALSE
+SP/HC,SP,SP,state_aggregate,145,145,145,TRUE
+TO,TO,TO,not_adjudicated,774,774,774,FALSE

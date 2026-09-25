@@ -1,0 +1,1 @@
+Os dados são reconstruídos da fonte e-NatJus pelo pacote R enatjus. Os parquets analíticos escritos pelos scripts `01`, `03` e `04` são versionados aqui; os ajustes de modelo salvos em `model-fits/` não são, porque excedem o limite de tamanho de arquivo do GitHub, e são reconstruídos por `R/08-final-analysis.R`. Veja "O que este repositório carrega" no README da raiz.

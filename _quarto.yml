@@ -1,0 +1,41 @@
+project:
+  type: default
+  post-render:
+    - uv run tools/format-docx.py
+  render:
+    - paper.qmd
+    - appendix.qmd
+    # O layout Typst do artigo e do apêndice num PDF só (tools/render-pdf.sh)
+    - report.qmd
+    # Cada seção também é renderizada sozinha, como documento de trabalho; os
+    # symlinks sections/tables e sections/figures fazem os includes resolverem
+    # tanto lá quanto quando o paper.qmd monta tudo.
+    - sections/*.qmd
+    - "!backups/"
+    # O corpo do apêndice é incluído por appendix.qmd e report.qmd; renderizado
+    # sozinho, numeraria suas tabelas como 1, 2, 3 em vez de A, B, C.
+    - "!sections/08-appendix.qmd"
+
+lang: pt-BR
+fig-cap-location: top
+tbl-cap-location: top
+crossref:
+  title-delim: " -"
+bibliography: references.bib
+# Citações autor-data e lista de referências no estilo ABNT que a Revista
+# Direito GV pede (NBR 10520:2023 no texto; a lista de referências segue a
+# NBR 6023:2002 neste CSL, próxima da revisão de 2018 que a revista cita).
+csl: csl/associacao-brasileira-de-normas-tecnicas.csl
+link-citations: true
+format:
+  docx:
+    reference-doc: _reference.docx
+    # Introdução, considerações finais e referências levam {.unnumbered}; as
+    # seções de desenvolvimento são numeradas 1, 2, 3 como a revista exige.
+    number-sections: true
+    # Estreito de propósito: assim toda pipe table passa da largura da linha e
+    # o Pandoc deriva larguras relativas de coluna a partir das corridas de
+    # traços, que os escritores de tabela dimensionam pelo conteúdo (nunca mais
+    # estreitas que a palavra mais longa). Sem larguras declaradas, o LibreOffice
+    # mantém colunas iguais e estreitas e quebra nomes no meio da palavra.
+    columns: 40

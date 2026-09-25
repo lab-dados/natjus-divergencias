@@ -1,0 +1,10 @@
+---
+title: "Apêndice de \"Judicialização da saúde e as divergências entre os Núcleos de Apoio Técnico do Judiciário (NatJus): uma análise empírica\""
+number-sections: false
+crossref:
+  title-delim: " -"
+  tbl-labels: alpha A
+  fig-labels: alpha A
+---
+
+{{< include sections/08-appendix.qmd >}}

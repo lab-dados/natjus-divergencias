@@ -1,0 +1,21 @@
+item,in_article,included_at,scripts
+figures/kit-attrition-flowchart.png,yes,sections/03-data-and-methods.qmd:17,R/13-attrition-flowchart.R
+figures/kit-production-by-year.png,yes,sections/04-results.qmd:7,R/09-writing-kit.R
+figures/favourable-rate-by-natjus.png,yes,sections/04-results.qmd:23,R/06-figures.R
+figures/kit-conitec-rates-by-natjus.png,yes,sections/04-results.qmd:39,R/09-writing-kit.R
+figures/kit-pair-dispersion.png,yes,sections/04-results.qmd:53,R/09-writing-kit.R
+figures/kit-standardized-probability.png,yes,sections/04-results.qmd:77,R/09-writing-kit.R
+tables/manuscript/kit-fixed-effects.md,yes,sections/04-results.qmd:89,R/09-writing-kit.R
+tables/manuscript/kit-variables.md,yes,sections/08-appendix.qmd:7,written by hand
+tables/manuscript/kit-fits.md,yes,sections/08-appendix.qmd:15,R/09-writing-kit.R
+tables/manuscript/kit-model-1-2-origins.md,yes,sections/08-appendix.qmd:19,R/09-writing-kit.R
+figures/kit-adjusted-origin-effects.png,yes,sections/08-appendix.qmd:21,R/09-writing-kit.R
+tables/manuscript/kit-model-1-1-origins.md,yes,sections/08-appendix.qmd:33,R/09-writing-kit.R
+tables/manuscript/kit-fixest-removed.md,yes,sections/08-appendix.qmd:37,R/09-writing-kit.R
+figures/kit-conitec-adjusted-by-natjus.png,yes,sections/08-appendix.qmd:43,R/09-writing-kit.R
+tables/manuscript/kit-conitec-rates.md,yes,sections/08-appendix.qmd:55,R/09-writing-kit.R
+tables/manuscript/production-by-natjus.md,yes,sections/08-appendix.qmd:61,R/07-manuscript-tables.R
+tables/manuscript/kit-pair-thresholds.md,yes,sections/08-appendix.qmd:65,R/09-writing-kit.R
+tables/manuscript/kit-pair-extremes.md,yes,sections/08-appendix.qmd:74,R/09-writing-kit.R
+tables/manuscript/kit-local-national.md,yes,sections/08-appendix.qmd:76,R/09-writing-kit.R
+tables/manuscript/attrition.md,no,,R/07-manuscript-tables.R;R/08-final-analysis.R;R/13-attrition-flowchart.R

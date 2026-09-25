@@ -1,0 +1,89 @@
+# Resultados
+
+## Produção de notas por NatJus
+
+O número de notas técnicas sobre medicamentos acrescentados à plataforma e-NatJus aumenta anualmente desde a sua criação (@fig-production-by-year). Nos anos recentes, esse crescimento vem sobretudo do NatJus Nacional, que atende magistrados de todos os tribunais. Na produção acumulada, o Nacional responde por {{< var national_share >}} das notas ({{< var national_notes >}} de {{< var sample_total >}}), e o maior local, o {{< var largest_local_origin >}}, tem {{< var largest_local_origin_notes >}}.
+
+![Notas técnicas por ano de emissão, NatJus Nacional e locais, {{< var series_start >}} a {{< var series_end >}}](figures/kit-production-by-year.png){#fig-production-by-year}
+
+::: {custom-style="Fonte"}
+Fonte: elaboração própria a partir das notas técnicas do e-NatJus (CNJ).
+:::
+
+::: {custom-style="Notas"}
+Notas: amostra analítica de notas sobre medicamentos com conclusão registrada, em {{< var n_origins >}} NatJus. Uma barra representa o Nacional e a outra os {{< var n_local_origins >}} locais somados; o valor está sobre cada barra. O ano de 2026 vai até agosto e é parcial.
+:::
+
+Em parte, essa discrepância pode ser explicada pelo fato de que o NatJus Nacional, por ser nativo à plataforma e-NatJus – suas notas técnicas podem ser requisitadas tão somente por esta –, inclui no e-NatJus a totalidade das notas técnicas que produz, o que não ocorre em todos os NatJus. Em 2021, o CNJ determinou que compete ao tribunal a que estiver vinculado o coordenador do Comitê Estadual de Saúde local “designar um servidor para alimentar a plataforma E-NatJus, com as notas técnicas produzidas pelo Núcleo de Apoio Técnico do Judiciário (NatJus)” (Resolução CNJ n.º 388/2021). Porém, discrepâncias entre notas produzidas pelos NatJus e registradas por eles no e-NatJus persistem. O maior exemplo disso é o NatJus MG. O NatJus MG juntou apenas {{< var mg_notes_base >}} notas técnicas à plataforma ({{< var mg_notes_medicines >}} sobre medicamentos), entre {{< var mg_first_note >}} e {{< var mg_last_note >}}. Em sua biblioteca digital, por outro lado, estão disponíveis mais de 3 mil notas técnicas (TJMG, \[s.d.\]).
+
+## Divergência bruta entre os NatJus e entre eles e a Conitec
+
+A @fig-rate-by-natjus mostra a taxa favorável por NatJus com intervalo de confiança. As taxas de conclusão favorável diferem muito entre os NatJus, e os intervalos de confiança dos extremos ficam longe de se sobrepor (@fig-rate-by-natjus). O {{< var lowest_rate_origin >}} concluiu favoravelmente em apenas {{< var lowest_rate >}} das notas, {{< var lowest_rate_share_of_second >}} da taxa do segundo menos favorável, o {{< var second_lowest_rate_origin >}}. No outro extremo, três NatJus tiveram taxa favorável {{< var top_rate_origins_ratio_to_lowest >}} a do {{< var lowest_rate_origin >}}: {{< var top_rate_origins >}}.
+
+![Taxa de conclusão favorável por NatJus na amostra analítica](figures/favourable-rate-by-natjus.png){#fig-rate-by-natjus}
+
+::: {custom-style="Fonte"}
+Fonte: elaboração própria a partir das notas técnicas do e-NatJus (CNJ).
+:::
+
+::: {custom-style="Notas"}
+Notas: {{< var n_origins >}} NatJus em ordem decrescente de taxa favorável, com intervalo de confiança a 95%. O número entre parênteses é o total de notas do NatJus na amostra; os valores estão na Tabela G do apêndice, entre {{< var series_start >}} e {{< var series_end >}}.
+:::
+
+Uma hipótese que poderia explicar essa grande diferença na taxa de emissão de notas técnicas favoráveis à concessão seria as diferenças nos tipos de demanda que chegaram para a análise de cada NatJus. Se um NatJus analisa mais pedidos de medicamentos sem comprovação de eficácia, seria esperado que ele concedesse menos decisões favoráveis. É razoável supor que o tipo de demanda varie regionalmente.
+
+No entanto, vemos uma diferença grande na taxa de emissão de notas técnicas favoráveis à concessão de medicamentos dos NatJus mesmo quando separamos as recomendações de acordo com a existência ou não de uma análise da Conitec e, quando houve, se ela foi favorável ou não à incorporação (@fig-conitec-by-natjus e Tabela F do apêndice). Parte-se do pressuposto que a recomendação favorável da Conitec é um indicador de que há evidência de que o tratamento oferece ganhos clínicos significativos.
+
+A taxa de notas técnicas favoráveis é de {{< var conitec_rate_favourable >}} entre as notas com manifestação favorável da Conitec, {{< var conitec_rate_unfavourable >}} entre as de manifestação desfavorável e {{< var conitec_rate_not_evaluated >}} entre as de medicamento não avaliado. Entretanto, a diferença entre NatJus permanece mesmo dentro de cada manifestação da Conitec, e ela acompanha tendências gerais de concessão em cada NatJus.
+
+![Taxa bruta de conclusão favorável por NatJus e manifestação da Conitec](figures/kit-conitec-rates-by-natjus.png){#fig-conitec-by-natjus}
+
+::: {custom-style="Fonte"}
+Fonte: elaboração própria a partir das notas técnicas do e-NatJus (CNJ).
+:::
+
+::: {custom-style="Notas"}
+Notas: a taxa é calculada dentro de cada manifestação da Conitec registrada na nota, com intervalo de confiança a 95%. Há um painel por manifestação, e os NatJus seguem em todos a ordem decrescente de taxa favorável geral. A escala vai de 0% a 100%. As probabilidades padronizadas pelo Modelo 1 estão na Figura B do apêndice.
+:::
+
+Verificamos, ainda, para cada combinação de CID e medicamento que recebeu ao menos {{< var pair_floor >}} pareceres de pelo menos dois NatJus, qual foi a diferença entre a taxa mais favorável e a taxa menos favorável à concessão daquele medicamento para tratar aquela doença (Tabela H do apêndice). Das {{< var pairs_eligible >}} combinações que cumpriram esses critérios, em {{< var pairs_range_100 >}} a diferença foi de 100 pontos percentuais, isto é, pelo menos um NatJus concluiu favoravelmente em todos os pedidos que recebeu e outro em nenhum. Em {{< var pairs_range_80 >}} casos, a diferença foi de 80 pontos ou mais; em {{< var pairs_range_50 >}}, de ao menos 50; e em {{< var pairs_range_20 >}}, de ao menos 20.
+
+A @fig-pair-dispersion mostra que a divergência não se resume a poucos pares. A distância mediana entre o NatJus mais e o menos favorável, nos {{< var pairs_eligible >}} pares, é de {{< var pair_gap_median_pp >}} pontos percentuais, e a distribuição tem dois acúmulos: {{< var pair_gap_below_10_share >}} dos pares ficam abaixo de 10 pontos, em que os NatJus quase coincidem, e um segundo grupo se concentra perto dos 100 pontos, em que um NatJus sempre conclui favoravelmente e outro nunca. Entre os dois, a distância se espalha de modo quase uniforme, o que afasta a leitura de que os extremos sejam exceção.
+
+![Distribuição das diferenças entre taxas favoráveis dos NatJus por par medicamento × CID](figures/kit-pair-dispersion.png){#fig-pair-dispersion}
+
+::: {custom-style="Fonte"}
+Fonte: elaboração própria a partir das notas técnicas do e-NatJus (CNJ).
+:::
+
+::: {custom-style="Notas"}
+Notas: {{< var pairs_eligible >}} pares em que dois ou mais NatJus, o Nacional incluído, têm ao menos {{< var pair_floor >}} notas cada. A distância é a maior taxa favorável bruta menos a menor, em pontos percentuais, agrupada em classes de 5 pontos. A linha tracejada marca a mediana, {{< var pair_gap_median_pp >}} pontos; os pares em 100 pontos são os da Tabela I do apêndice.
+:::
+
+Na Tabela I do apêndice, apresentamos os pares medicamento × CID em que a diferença entre as taxas favoráveis de dois NatJus alcançou 100 pontos percentuais: um concluiu favoravelmente em todas as notas sobre aquele par, enquanto outro concluiu desfavoravelmente em todas, ambos com ao menos {{< var pair_floor >}} notas. Em alguns pares, mais de um NatJus apresentou a mesma unanimidade. Esses resultados mostram conclusões diametralmente opostas para o mesmo medicamento e categoria de doença, embora os pedidos possam diferir em outras características clínicas.
+
+Desde 2019, magistrados podem pedir nota técnica ao NatJus Nacional ou ao seu NatJus local, e as duas vias respondem ao mesmo par medicamento × CID com taxas distintas. A comparação com os locais produz {{< var ln_comparisons >}} comparações em {{< var ln_pairs >}} pares medicamento × CID. Nenhuma diferença alcança 100 pontos percentuais; {{< var ln_gap_80 >}} alcançam pelo menos 80 pontos, {{< var ln_gap_50 >}} pelo menos 50 e {{< var ln_gap_20 >}} pelo menos 20. Nas {{< var ln_gap_20 >}} comparações desse último grupo, a taxa favorável do local supera a do Nacional em {{< var ln_gap_20_local_higher >}}; nas outras {{< var ln_gap_20_national_higher >}}, ocorre o inverso. A Tabela J do apêndice apresenta, para cada NatJus local, os pares de maior e menor diferença em relação ao Nacional.
+
+A Tabela J mostra que um mesmo NatJus pode apresentar taxa favorável superior à do Nacional para um tratamento e inferior para outro. Para {{< var ln_ms_local_medicine >}}, na categoria CID {{< var ln_ms_local_cid >}}, o NatJus MS foi favorável em {{< var ln_ms_local_local_favourable >}} de {{< var ln_ms_local_local_total >}} notas ({{< var ln_ms_local_local_rate >}}), contra {{< var ln_ms_local_national_favourable >}} de {{< var ln_ms_local_national_total >}} do Nacional ({{< var ln_ms_local_national_rate >}}). Para {{< var ln_ms_national_medicine >}}, na categoria {{< var ln_ms_national_cid >}}, ocorreu o inverso: o MS foi favorável em {{< var ln_ms_national_local_favourable >}} de {{< var ln_ms_national_local_total >}} notas ({{< var ln_ms_national_local_rate >}}), contra {{< var ln_ms_national_national_favourable >}} de {{< var ln_ms_national_national_total >}} do Nacional ({{< var ln_ms_national_national_rate >}}). Portanto, a posição relativa dos dois núcleos varia conforme o medicamento e a categoria de doença considerados.
+
+## Divergência ajustada
+
+A divergência permanece após os controles. Na padronização pelo Modelo 1 sobre todos os pedidos da amostra,[^methods-10] a probabilidade de conclusão favorável vai de {{< var std_prob_lowest >}} no {{< var std_prob_lowest_origin >}} a {{< var std_prob_highest >}} no {{< var std_prob_highest_origin >}}, uma amplitude de aproximadamente {{< var std_prob_range_pp >}} pontos percentuais. O Nacional fica em {{< var std_prob_national >}}, abaixo de {{< var std_prob_locals_above_national >}} dos {{< var n_local_origins >}} núcleos locais. O desvio-padrão do intercepto de NatJus é de {{< var sd_origin >}}, com intervalo de perfil {{< var sd_origin_profile_interval >}}, e corresponde a uma razão de chances mediana de {{< var mor >}}.[^results-mor] O teste de razão de verossimilhança contra o mesmo modelo sem o intercepto de NatJus rejeita a hipótese de variância nula (estatística de {{< var origin_lrt_statistic >}}, com 1 grau de liberdade; p < 0,001).
+
+[^results-mor]: A razão de chances mediana traduz o desvio-padrão para a escala das chances: sorteados dois NatJus e mantidas iguais as demais características do pedido, é a mediana da razão entre a chance de conclusão favorável no núcleo mais favorável e no menos favorável [@larsen2005]. O intervalo do desvio-padrão é o de perfil de verossimilhança, que respeita o fato de essa quantidade nunca ser negativa, e o p-valor do teste usa a distribuição de referência própria de uma hipótese na fronteira do espaço de parâmetros.
+
+[^methods-10]: A técnica é conhecida como padronização marginal ou "observed-value approach": o modelo prevê, para cada nota da amostra, a probabilidade de conclusão favorável como se aquele NatJus a tivesse avaliado, e a média dessas previsões é a probabilidade padronizada do NatJus [@hanmer2013; @muller2014].
+
+![Taxa favorável bruta e probabilidade padronizada por NatJus, Modelo 1](figures/kit-standardized-probability.png){#fig-standardized-probability}
+
+::: {custom-style="Fonte"}
+Fonte: elaboração própria a partir das notas técnicas do e-NatJus (CNJ).
+:::
+
+::: {custom-style="Notas"}
+Notas: {{< var n_origins >}} NatJus em ordem decrescente de probabilidade padronizada. O círculo vazio indica a taxa bruta e o cheio a probabilidade média prevista pelo Modelo 1; o segmento liga as duas quantidades. A linha tracejada marca a probabilidade padronizada do Nacional, {{< var std_prob_national >}}. Os contrastes no logito e seus intervalos de Wald estão na Tabela C do apêndice; a figura não apresenta intervalos das probabilidades padronizadas.
+:::
+
+A @tbl-fixed-effects apresenta as associações entre as características registradas e a conclusão favorável. No Modelo 1, as notas que registram conformidade da indicação têm {{< var or_conformity >}} vezes a chance de conclusão favorável das que registram não conformidade, mantidas as demais variáveis. Em relação às notas sobre medicamentos não avaliados pela Conitec, a razão de chances é de {{< var or_conitec_favourable >}} para manifestação favorável e {{< var or_conitec_unfavourable >}} para desfavorável. Disponibilidade no SUS, caráter oncológico, registro na Anvisa e previsão em protocolo apresentam razões acima de 1; existência de biossimilar, abaixo de 1. As estimativas pontuais do Modelo 2 seguem essas direções, mas seus intervalos incluem 1 para protocolo e biossimilar, de modo que a precisão não é a mesma nos dois ajustes. As razões relativas ao sexo e à representação jurídica ficam próximas de 1. A tendência mensal equivale a uma razão de chances anual de {{< var or_time_yearly >}}, ou redução de cerca de {{< var time_yearly_decline >}} por ano sob a tendência linear adotada, sem demonstrar que a variação tenha sido uniforme ao longo da série.
+
+{{< include tables/manuscript/kit-fixed-effects.md >}}

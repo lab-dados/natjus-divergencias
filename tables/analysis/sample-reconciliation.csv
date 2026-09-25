@@ -1,0 +1,19 @@
+# base_dataset: BrunoDCDO/enatjus_v2
+# base_revision: be990d4dc17ec24274419c6ff0460844700270a9
+# base_file: data/base_enatjus_tratada.parquet
+# base_sha256: eec865c49d09ae57ed606b531312ca7d8379726a30e06225ff27763965aa2390
+# base_bytes: 521311996
+# base_rows: 504345
+# base_generated_at: 2026-09-24T18:49:57-03:00
+# collector_commit: ad40ae9a97623af141c43479ad70374ffdc76a47
+# enatjus_commit: d2ee1a07e8bd54fa0baa237bdee760a334958389
+# analysis_built_at: 2026-09-24T22:29:24-0300
+# historical_sample_sha256: 8f4dabdc2e945b48dda95264d49f22642e8f989d9d71362d65a29ce368fb827b
+# origin_map_sha256: 2304b9ddb30f585aca56fc87b9d71e7c8372911f690f6878de5c045d93f7f0b0
+# population: final_analysis_sample
+# population_rows: 273734
+transition,notes
+entered,58
+excluded_both,226
+exited,0
+retained,273676

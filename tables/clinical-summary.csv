@@ -1,0 +1,26 @@
+# base_dataset: BrunoDCDO/enatjus_v2
+# base_revision: be990d4dc17ec24274419c6ff0460844700270a9
+# base_file: data/base_enatjus_tratada.parquet
+# base_sha256: eec865c49d09ae57ed606b531312ca7d8379726a30e06225ff27763965aa2390
+# base_bytes: 521311996
+# base_rows: 504345
+# base_generated_at: 2026-09-24T18:49:57-03:00
+# collector_commit: ad40ae9a97623af141c43479ad70374ffdc76a47
+# enatjus_commit: d2ee1a07e8bd54fa0baa237bdee760a334958389
+# diagnostics_built_at: 2026-09-24T22:28:34-0300
+# input_sample_sha256: 8f4dabdc2e945b48dda95264d49f22642e8f989d9d71362d65a29ce368fb827b
+# population: sample_before_origin_decision
+# population_rows: 273676
+scope,variable,denominator,medicines,missing_notes,unanimous_notes,unanimous_fraction,unanimous_missing_notes,substantive_unanimous_notes,unknown_medicine_notes_excluded
+all_notes,selIndicacaoConformidade,273676,8829,14337,10447,0.03817287595550944,2105,8342,0
+all_notes,selPrevistoProtocolo,273676,8829,15722,10719,0.039166751925634694,2429,8290,0
+all_notes,selRegistroAnvisa,273676,8829,800,67386,0.24622546368698753,121,67265,0
+all_notes,selDisponivelSus,273676,8829,7180,20940,0.07651383387655476,1501,19439,0
+all_notes,selOncologico,273676,8829,5561,22830,0.0834198102866163,1332,21498,0
+all_notes,selExisteBiossimilar,273676,8829,23091,16979,0.0620405150616057,12365,4614,0
+known_medicine,selIndicacaoConformidade,272890,8828,14282,10447,0.038282824581333134,2105,8342,786
+known_medicine,selPrevistoProtocolo,272890,8828,15654,10719,0.039279563193960934,2429,8290,786
+known_medicine,selRegistroAnvisa,272890,8828,800,67386,0.24693466231815017,121,67265,786
+known_medicine,selDisponivelSus,272890,8828,7147,20940,0.07673421525156657,1501,19439,786
+known_medicine,selOncologico,272890,8828,5536,22830,0.08366008281725237,1332,21498,786
+known_medicine,selExisteBiossimilar,272890,8828,23074,16979,0.06221920920517424,12365,4614,786

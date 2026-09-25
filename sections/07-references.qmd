@@ -1,0 +1,13 @@
+---
+# Standalone document: lists every work in references.bib (nocite), so the
+# section documents can be read without a reference list of their own. The
+# assembled paper.qmd keeps its own reference block, which lists only the
+# works actually cited; this file is not included there.
+suppress-bibliography: false
+nocite: "@*"
+---
+
+# Referências {.unnumbered}
+
+::: {#refs}
+:::

@@ -1,0 +1,12 @@
+# generated_at: 2026-09-24T22:52:27-0300
+# enatjus_sha: d2ee1a07e8bd54fa0baa237bdee760a334958389
+# data/analysis-sample.parquet_sha256: 2bd818e212709b14a8ad13af53e61701083e309ad1854a101b92849eab7ca08b
+# data/analysis-covariates.parquet_sha256: 5e9cc9587722dcf4d559f9f5fcc005dfcb22110b3951ea6b798ba716e2dd18cd
+# tables/analysis/attrition.csv_sha256: aba4704d9f7323d0344291fbe7e13128c0c2e337dac13efa6d3e66acbb6b171a
+# tables/analysis/production-by-analysis-origin.csv_sha256: fd87ec834d0e35ec9518ffcab550b3070eabb8dadd07b9c210221f2b26ce69e8
+# tables/analysis/verification.csv_sha256: 3936b93df4529a329757f31a976d1760393b9dae56397fdb130fbd048a16c8bb
+comparison,full_model,restricted_model,n_full,n_restricted,same_estimation_n,statistic,degrees_of_freedom,null_on_boundary,p_value_regular,p_value_boundary_mixture,technically_comparable,candidate,default
+fixed_origin_block,model_1_1_common_full,model_1_1_without_origin,260833,260833,TRUE,17584.72022556854,24,FALSE,0,,TRUE,TRUE,FALSE
+fixed_clinical_block,model_1_1_common_full,model_1_1_without_clinical,260833,260833,TRUE,2445.2843191742722,12,FALSE,0,,TRUE,TRUE,FALSE
+random_origin_variance,model_1_2,model_1_2_without_origin,273734,273734,TRUE,17607.49275252322,1,TRUE,0,0,TRUE,TRUE,FALSE
+mixed_clinical_block,model_1_2,model_1_2_without_clinical,273734,273734,TRUE,2818.5512840635492,12,FALSE,0,,TRUE,TRUE,FALSE

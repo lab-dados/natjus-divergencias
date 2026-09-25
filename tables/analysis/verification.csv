@@ -1,0 +1,39 @@
+# base_dataset: BrunoDCDO/enatjus_v2
+# base_revision: be990d4dc17ec24274419c6ff0460844700270a9
+# base_file: data/base_enatjus_tratada.parquet
+# base_sha256: eec865c49d09ae57ed606b531312ca7d8379726a30e06225ff27763965aa2390
+# base_bytes: 521311996
+# base_rows: 504345
+# base_generated_at: 2026-09-24T18:49:57-03:00
+# collector_commit: ad40ae9a97623af141c43479ad70374ffdc76a47
+# enatjus_commit: d2ee1a07e8bd54fa0baa237bdee760a334958389
+# analysis_built_at: 2026-09-24T22:29:24-0300
+# historical_sample_sha256: 8f4dabdc2e945b48dda95264d49f22642e8f989d9d71362d65a29ce368fb827b
+# origin_map_sha256: 2304b9ddb30f585aca56fc87b9d71e7c8372911f690f6878de5c045d93f7f0b0
+# population: final_analysis_sample
+# population_rows: 273734
+check,expected,observed,passed
+map rows,13,13,TRUE
+pre-floor IDs are unique,273960,273960,TRUE
+sample IDs are unique,273734,273734,TRUE
+covariate IDs match sample,273734,273734,TRUE
+canonical origin matches analytical origin,273734,273734,TRUE
+attrition ends at sample rows,273734,273734,TRUE
+production notes sum to sample rows,273734,273734,TRUE
+production origins match sample,25,25,TRUE
+historical sample IDs accounted for,273676,273676,TRUE
+no IDs exit the historical sample,0,0,TRUE
+pre-floor rows,273960,273960,TRUE
+analysis rows,273734,273734,TRUE
+analysis origins,25,25,TRUE
+removed by analytical floor,226,226,TRUE
+entered IDs,58,58,TRUE
+entered PR/CHC-UFPR IDs,58,58,TRUE
+received label differs from analytical origin,1337,1337,TRUE
+PR rows,7519,7519,TRUE
+SP rows,17433,17433,TRUE
+production rows,32,32,TRUE
+historical products unchanged,1,1,TRUE
+analysis sample sha256,2bd818e212709b14a8ad13af53e61701083e309ad1854a101b92849eab7ca08b,2bd818e212709b14a8ad13af53e61701083e309ad1854a101b92849eab7ca08b,TRUE
+analysis covariates sha256,5e9cc9587722dcf4d559f9f5fcc005dfcb22110b3951ea6b798ba716e2dd18cd,5e9cc9587722dcf4d559f9f5fcc005dfcb22110b3951ea6b798ba716e2dd18cd,TRUE
+analysis origin ledger sha256,3129bf8022307a1f1e5f967f37f5e967295cf006cd36900f4f3d7936bb218024,3129bf8022307a1f1e5f967f37f5e967295cf006cd36900f4f3d7936bb218024,TRUE

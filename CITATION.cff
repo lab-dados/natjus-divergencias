@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Se usar este material, cite-o como abaixo."
+type: software
+title: "Material de replicação de: Judicialização da saúde e as divergências entre os Núcleos de Apoio Técnico do Judiciário (NatJus): uma análise empírica"
+authors:
+  - family-names: Oliveira
+    given-names: Bruno da Cunha de
+    orcid: "https://orcid.org/0000-0002-1943-0110"
+  - family-names: Wang
+    given-names: Daniel Wei Liang
+    orcid: "https://orcid.org/0000-0002-7761-1315"
+  - family-names: Trecenti
+    given-names: Julio
+    orcid: "https://orcid.org/0000-0002-1680-6389"
+  - family-names: Brajal
+    given-names: Beatriz
+repository-code: "https://github.com/lab-dados/natjus-divergencias"
+license:
+  - MIT
+  - CC-BY-4.0

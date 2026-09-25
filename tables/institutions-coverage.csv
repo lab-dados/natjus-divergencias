@@ -1,0 +1,11 @@
+variable,natjus_with_value,natjus_in_sample,share
+founded_year,6,29,0.207
+founded_by,11,29,0.379
+founded_after,2,29,0.069
+court,11,29,0.379
+health_secretariat,15,29,0.517
+university,12,29,0.414
+non_university_hospital,12,29,0.414
+pre_2016,12,29,0.414
+first_note,29,29,1
+last_note,29,29,1

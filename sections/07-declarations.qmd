@@ -1,0 +1,40 @@
+<!-- As declarações que o SciELO Preprints exige em seção própria do manuscrito,
+     na ordem do modelo de manuscrito dele: contribuição de cada autor pela
+     taxonomia CRediT, conflito de interesses, disponibilidade de dados e uso de
+     inteligência artificial. Ética entra depois do conflito, porque o modelo não
+     a prevê. Incluída por paper.qmd e report.qmd, antes das referências. O
+     conteúdo é dos autores; o agente só monta o esqueleto e os campos de dado,
+     com duas exceções: as declarações de disponibilidade e de uso de IA, que
+     ele redigiu a pedido dos autores a partir dos fatos que eles confirmaram. -->
+
+# Declarações {.unnumbered}
+
+## Contribuição dos autores {.unnumbered}
+
+As contribuições seguem a taxonomia CRediT.
+
+**Bruno da Cunha de Oliveira:** conceituação; curadoria de dados; análise formal; investigação; metodologia; administração do projeto; software; validação; visualização; escrita (rascunho original); escrita (revisão e edição).
+
+**Daniel Wei Liang Wang:** conceituação; investigação; metodologia; supervisão; escrita (rascunho original); escrita (revisão e edição).
+
+**Julio Trecenti:** análise formal; metodologia; software; validação; visualização; escrita (revisão e edição).
+
+**Beatriz Brajal:** análise formal; metodologia; software; validação; visualização; escrita (revisão e edição).
+
+## Conflito de interesses {.unnumbered}
+
+Daniel Wei Liang Wang é consultor do Ministério da Saúde, com bolsa da Fiotec/Fiocruz, consultor do Conselho Nacional de Secretarias Municipais de Saúde (Conasems) e membro do conselho consultivo da Rede D'Or. Em 2023 e 2025, Julio Trecenti prestou consultorias remuneradas, através de sua empresa de consultoria Terranova Jurimetria, para o Einstein Hospital Israelita, em estudos relacionados a custo-efetividade do Natjus. Um dos estudos gerou insumos para escrita do artigo de @correia2025. Os demais autores declaram não haver conflito de interesses.
+
+## Ética em pesquisa {.unnumbered}
+
+O protocolo de pesquisa que deu origem a este artigo foi aprovado pelo Comitê de Conformidade Ética em Pesquisas Envolvendo Seres Humanos da Fundação Getulio Vargas (FGV CEPH), no Parecer n. P.424.2023, de 24 de outubro de 2023, sob o título "Núcleos de Apoio Técnico ao Poder Judiciário: quando o endereço define o direito à saúde", tendo como pesquisador responsável Bruno da Cunha de Oliveira e como orientador Daniel Wei Liang Wang. A pesquisa prossegue no Laboratório de Dados e Pesquisa Empírica em Direito (LabDados) da FGV Direito SP sob o protocolo do Centro de Pesquisas em Direito e Avaliação de Tecnologias em Saúde (DATS), cujo termo aditivo o mesmo comitê aprovou no Parecer n. P.040.2026, de 6 de julho de 2026, tendo como pesquisador responsável Daniel Wei Liang Wang.
+
+Os dados analisados vêm de notas técnicas de acesso público na plataforma e-NatJus do Conselho Nacional de Justiça e não incluem informação que identifique pacientes. Esta parte da pesquisa não trabalha com processos judiciais.
+
+## Disponibilidade de dados e código {.unnumbered}
+
+Os dados analisados são públicos e estão na plataforma e-NatJus do Conselho Nacional de Justiça. Todo o conjunto de dados de apoio aos resultados deste estudo foi disponibilizado no GitHub e pode ser acessado em <https://github.com/lab-dados/natjus-divergencias>: os dados de trabalho e o código que gera o texto, as figuras, as tabelas e todos os números do artigo. A base analisada, só com as notas que a plataforma exibe sem login, está publicada no Hugging Face, em <https://huggingface.co/datasets/BrunoDCDO/enatjus_v2>, na versão que o repositório registra. As tabelas, as figuras, os números e os modelos do artigo se reconstroem a partir desses dois endereços.
+
+## Uso de inteligência artificial {.unnumbered}
+
+Os autores usaram as ferramentas de inteligência artificial Claude Code (Anthropic) e Codex (OpenAI) no desenvolvimento do código de análise dos dados e de montagem do manuscrito, na conversão do texto revisado pelos autores do Word para os arquivos-fonte do manuscrito e na diagramação do PDF. Os autores revisaram o que as ferramentas produziram e respondem pelo conteúdo do artigo.

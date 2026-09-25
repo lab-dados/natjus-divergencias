@@ -1,0 +1,43 @@
+# The analytical parquets are versioned; the saved model fits (1.4 GB, files up
+# to 410 MB) exceed GitHub's file limit and are rebuilt by R/08-final-analysis.R
+/data/model-fits/
+/paper.docx
+/paper-with-appendix.docx
+/.quarto/
+/paper_files/
+/.Rproj.user/
+.Rhistory
+.RData
+.venv/
+__pycache__/
+*.py[cod]
+~$*.docx
+
+**/*.quarto_ipynb
+/.Renviron
+
+# Section outlines: internal drafting notes, not distributed with the manuscript
+/outline/
+
+# Timestamped copies of superseded analysis bundles; reconstructible, not distributed
+/backups/
+# Slide-sized exports of the figures (NATJUS_FIGURAS_PRESET=slides); not distributed
+/figures/slides/
+# LibreOffice lock files of an open document
+.~lock.*#
+# Rendered documents; the reference document stays versioned
+/appendix.docx
+/sections/*.docx
+
+# Typst layout of the paper with its appendix (tools/render-pdf.sh)
+/report.pdf
+/report.typ
+/report-neutro.pdf
+/report-neutro.typ
+/report_files/
+
+# Rendered reading copy of the parked discussion
+/paper-discussion.docx
+
+# Base do artigo, baixada do Hugging Face por tools/baixar-base.sh.
+/data/hf/

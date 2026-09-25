@@ -1,0 +1,7 @@
+# As cópias de trabalho de cada seção são renderizadas sem número de seção; o
+# paper.qmd montado é que numera.
+number-sections: false
+
+# Cada seção é renderizada sem lista de referências própria; a lista mora em
+# 07-references.qmd e, no artigo montado, no fim do paper.qmd.
+suppress-bibliography: true

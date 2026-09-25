@@ -1,0 +1,57 @@
+<!-- Primeira página de conteúdo como o SciELO Preprints pede: nome de cada autor,
+     afiliação completa logo abaixo e ORCID com link ativado; depois resumo e
+     palavras-chave em português e, então, título, resumo e palavras-chave em inglês.
+     Sem biografia, que o servidor não pede. As divs "Autor" viram estilo de parágrafo
+     no Word e bloco de corpo de texto no Typst. Incluída por paper.qmd e report.qmd.
+     O título, as keywords e o abstract em inglês são tradução do português;
+     ao mudar o resumo, refazer o abstract. -->
+
+```{=typst}
+#folha-de-rosto[
+```
+
+::: {custom-style="Autor"}
+**Bruno da Cunha de Oliveira.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil; Insper Instituto de Ensino e Pesquisa, São Paulo, SP, Brasil. ORCID: <https://orcid.org/0000-0002-1943-0110>
+:::
+
+::: {custom-style="Autor"}
+**Daniel Wei Liang Wang.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil. ORCID: <https://orcid.org/0000-0002-7761-1315>
+:::
+
+::: {custom-style="Autor"}
+**Julio Trecenti.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil; Insper Instituto de Ensino e Pesquisa, São Paulo, SP, Brasil. ORCID: <https://orcid.org/0000-0002-1680-6389>
+:::
+
+::: {custom-style="Autor"}
+**Beatriz Brajal.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil; Universidade de São Paulo, Instituto de Matemática e Estatística, São Paulo, SP, Brasil. ORCID: <https://orcid.org/0000-0003-2467-0677>
+:::
+
+```{=typst}
+#v(espaco-ate(1.5, corpo))
+```
+
+**Resumo**
+
+Os Núcleos de Apoio Técnico do Poder Judiciário (NatJus) são órgãos que têm a função de oferecer suporte técnico a magistrados em casos envolvendo pedidos judiciais de tratamentos de saúde. A importância desses órgãos aumentou recentemente com as decisões do Supremo Tribunal Federal no Tema 6 de Repercussão Geral, sobre pedidos judiciais de medicamentos não incorporados ao Sistema Único de Saúde, e na ADI 7265, sobre pedidos judiciais de tratamentos não incorporados ao rol da Agência Nacional de Saúde Suplementar. Em ambas as decisões, o STF determinou a obrigatoriedade de magistrados consultarem os NatJus, sempre que disponíveis na respectiva jurisdição, ou outros entes ou pessoas com expertise técnica em saúde. Diante desse quadro, este estudo analisou {{< var sample_total >}} notas técnicas sobre medicamentos registradas na plataforma e-NatJus e emitidas por um total de {{< var n_origins >}} NatJus distintos. Os resultados apontam para a existência de grande disparidade nas recomendações de diferentes NatJus, mesmo controlando para uma série de características dos casos individuais.
+
+**Palavras-chave:** judicialização da saúde, NatJus, medicamentos, avaliação de tecnologias em saúde, Conselho Nacional de Justiça (CNJ)
+
+```{=typst}
+// Resumo e abstract não cabem juntos na primeira página; a versão em inglês
+// abre a seguinte, em vez de o abstract se partir entre as duas.
+#pagebreak()
+```
+
+**Health litigation and divergences among Brazil's Judiciary Technical Support Centers (NatJus): an empirical analysis**
+
+**Abstract**
+
+Brazil's Judiciary Technical Support Centers (NatJus) are bodies whose function is to provide technical support to judges in cases involving court claims for health treatments. Their importance has recently grown with the decisions of the Federal Supreme Court (STF) in General Repercussion Theme 6, on court claims for medicines not incorporated into the Unified Health System (SUS), and in Direct Action of Unconstitutionality (ADI) 7265, on court claims for treatments not included in the list of mandatory coverage of the National Supplementary Health Agency (ANS). In both decisions, the STF made it mandatory for judges to consult the NatJus, whenever available in the respective jurisdiction, or other bodies or persons with technical expertise in health. Against this background, this study analyzed {{< var sample_total_en >}} technical notes on medicines registered on the e-NatJus platform and issued by a total of {{< var n_origins >}} different NatJus. The results point to large disparities in the recommendations of different NatJus, even when controlling for a range of characteristics of individual cases.
+
+**Keywords:** health litigation, NatJus, medicines, health technology assessment, National Council of Justice (CNJ)
+
+```{=typst}
+]
+// Sumário e listas vêm depois da folha de rosto, não antes.
+#pre-textuais()
+```

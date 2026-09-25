@@ -1,0 +1,11 @@
+# generated_at: 2026-09-24T22:52:27-0300
+# enatjus_sha: d2ee1a07e8bd54fa0baa237bdee760a334958389
+# data/analysis-sample.parquet_sha256: 2bd818e212709b14a8ad13af53e61701083e309ad1854a101b92849eab7ca08b
+# data/analysis-covariates.parquet_sha256: 5e9cc9587722dcf4d559f9f5fcc005dfcb22110b3951ea6b798ba716e2dd18cd
+# tables/analysis/attrition.csv_sha256: aba4704d9f7323d0344291fbe7e13128c0c2e337dac13efa6d3e66acbb6b171a
+# tables/analysis/production-by-analysis-origin.csv_sha256: fd87ec834d0e35ec9518ffcab550b3070eabb8dadd07b9c210221f2b26ce69e8
+# tables/analysis/verification.csv_sha256: 3936b93df4529a329757f31a976d1760393b9dae56397fdb130fbd048a16c8bb
+model,group,standard_deviation,variance
+model_1_2,origin,1.1212725335149576,1.2572520944150516
+model_1_2,medicine,1.1007060990507085,1.211553916487428
+model_1_2,cid,0.7639312506567624,0.5835909557300051

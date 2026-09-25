@@ -1,0 +1,1040 @@
+# Manuscript numbers, written by R/10-manuscript-numbers.R. Do not edit by hand:
+# rerun the script after a new analysis round. Each key is used in the text as
+# {{< var key >}}; the comment above it names the file, filter and column it
+# comes from.
+# generated_at: 2026-09-24T23:02:55-0300
+# input: tables/analysis/attrition.csv sha256 aba4704d9f7323d0344291fbe7e13128c0c2e337dac13efa6d3e66acbb6b171a
+# input: tables/analysis/covariate-levels.csv sha256 98d88ab336a9311e19861843228edf90381e5f59c9ac4a796b89ab23b06682a2
+# input: tables/analysis/final-analysis-descriptive-conitec-rates.csv sha256 9bb7e08501a9a40457ea9b3fd4efd33e8fe20c1376e53f28a584967041fb6bcc
+# input: tables/analysis/final-analysis-descriptive-local-national-extremes.csv sha256 6d4a054eaabe3477cc6a3993b700039421a263e7e527631f819b614485dc1922
+# input: tables/analysis/final-analysis-descriptive-pair-cells.csv sha256 ea7342e815a5d185ad862974d78e605b8509abc1aea307770cad79c108357b50
+# input: tables/analysis/final-analysis-descriptive-pair-dispersion.csv sha256 822269d870b0fe827d69cd701323b6e06241b999ced66a86f85d168fa6860bd0
+# input: tables/analysis/final-analysis-descriptive-pair-extremes.csv sha256 d6b85bcaadd97f0a675078af84013231f9118d3ed51f1aea217d21ae9c51c9cd
+# input: tables/analysis/final-analysis-descriptive-pair-range-thresholds.csv sha256 e17be1082d37a40c07a0a7c35e40e9938c763b82bae1e188442f905f2a43bdd7
+# input: tables/analysis/final-analysis-descriptive-production.csv sha256 2062bf857efc289e02cb05b26073273550f01169400c8dd0be09dd4014649061
+# input: tables/analysis/final-analysis-fit-coefficients.csv sha256 2dbf835426546736127c230bd4ca4333adc81960d13ffe6fccd440bf34426e48
+# input: tables/analysis/final-analysis-fit-populations.csv sha256 55dd6921d5c24f0760b66cd2447e04c72fa5de40de21e0f91e84cb8ac1154a5b
+# input: tables/analysis/final-analysis-fit-random-effects.csv sha256 85d904baacd02314123abe8352c8cf96b8a71b30f2c94930691dd19fe7450ec8
+# input: tables/analysis/final-analysis-likelihood-ratio-candidates.csv sha256 5d62a76910070e225b50de67d5fee4d738273cffdf0de46aed0931009399ba44
+# input: tables/analysis/final-analysis-metric-candidates.csv sha256 49d21e4d9a98de42d254b14bc62bf748409692931d144eb786bb4e298bae751c
+# input: tables/analysis/final-analysis-origin-effect-candidates.csv sha256 3f4cc043470b058fb2c6d5712f85a5410abce671627fb69ba66c1fc9dcdb5cb5
+# input: tables/analysis/final-analysis-profile-interval-candidates.csv sha256 3857c0ec34544ee92b494322c561733e471aa745e07c01fa29608eda96741a17
+# input: tables/analysis/kit-conitec-stratified-standardization.csv sha256 a169cdfc10fb87eab631dc0bfb975ba29af3f06b6c50ffbd82e5f3ce55db7d9b
+# input: tables/analysis/kit-origin-spellings.csv sha256 9aaf15dbf81b1f6bad9411e2e045d4212a05f67af04f01a6facf06f9de2f74a4
+# input: tables/analysis/kit-production-by-origin-year.csv sha256 f716f56a31e5600f33d2e45d3797b505eda407ce4af431efd3ab06073168d54a
+# input: tables/analysis/origin-flow.csv sha256 78f8773b410cc7fb862cebed050d6e1106d9e143359595e58e0ca095d8f33d20
+# input: tables/analysis/production-by-analysis-origin.csv sha256 fd87ec834d0e35ec9518ffcab550b3070eabb8dadd07b9c210221f2b26ce69e8
+# input: tables/analysis/sample-flags.csv sha256 00ad4d6b121b9d8a17cdb84b29419489dad36e735c2abc5a60c17fc5c0f882b6
+# input: tables/institutions.csv sha256 6a72e27fe5af310dd2820371aa40ac1feb627d8bd255e9cd11a03b970967a484
+
+# source: tables/analysis/attrition.csv, step emitted by the series end, remaining
+base_rows: "501.849"
+
+# source: tables/analysis/attrition.csv, step NatJus RJ excluded, removed_false
+attrition_rj: "5.611"
+
+# source: tables/analysis/attrition.csv, step conclusion recorded, removed_false
+attrition_no_conclusion: "11"
+
+# source: tables/analysis/attrition.csv, step conclusion recorded, remaining
+attrition_with_conclusion: "281.960"
+
+# source: tables/analysis/attrition.csv, step medicines only, removed_false
+attrition_not_medicine: "219.878"
+
+# source: tables/analysis/attrition.csv, step medicines only, remaining
+attrition_medicines: "281.971"
+
+# source: tables/analysis/attrition.csv, step origin mapped by the NatJus dictionary, removed_false
+attrition_origin_unmapped: "0"
+
+# source: tables/analysis/attrition.csv, step note carries an origin, removed_false
+attrition_no_origin: "13"
+
+# source: tables/analysis/attrition.csv, step emission date recorded, removed_false
+attrition_no_date: "2.358"
+
+# source: tables/analysis/attrition.csv, step series starts 2019-05, removed_false
+attrition_before_series: "18"
+
+# source: tables/analysis/attrition.csv, step analytical origins with at least 100 notes, removed_false
+attrition_below_floor: "226"
+
+# source: tables/analysis/attrition.csv, steps origin mapped by the NatJus dictionary and note carries an origin, removed_false summed
+attrition_no_origin_total: "13"
+
+# source: tables/analysis/attrition.csv, last step, remaining
+sample_total: "273.734"
+
+# source: tables/analysis/attrition.csv, last step, remaining, English thousands separator
+sample_total_en: "273,734"
+
+# source: tables/analysis/attrition.csv, last step, remaining, rounded down to ten thousands
+sample_total_rounded: "270 mil"
+
+# source: tables/analysis/production-by-analysis-origin.csv, rows with inclusion in sample
+n_origins: "25"
+
+# source: tables/analysis/production-by-analysis-origin.csv, rows in sample except Nacional
+n_local_origins: "24"
+
+# source: tables/analysis/production-by-analysis-origin.csv, rows in sample except Nacional, RS/DMJ and TelessaúdeRS-UFRGS
+n_state_origins_outside_rs: "22"
+
+# source: tables/analysis/production-by-analysis-origin.csv, rows with inclusion below floor of 100
+n_origins_below_floor: "6"
+
+# source: tables/analysis/production-by-analysis-origin.csv, origin of rows below floor of 100
+origins_below_floor: "RS, AM/SEMSA, MG, AP, AM e RO"
+
+# source: tables/analysis/production-by-analysis-origin.csv, min first_month in sample
+series_start: "maio de 2019"
+
+# source: tables/analysis/production-by-analysis-origin.csv, max last_month in sample
+series_end: "agosto de 2026"
+
+# source: tables/analysis/production-by-analysis-origin.csv, last day of max last_month in sample
+series_end_day: "31 de agosto de 2026"
+
+# source: tables/analysis/production-by-analysis-origin.csv, months from min first_month to max last_month
+month_index_max: "87"
+
+# source: tables/analysis/covariate-levels.csv, rows with variable medicine
+medicine_levels: "8.829"
+
+# source: tables/analysis/covariate-levels.csv, rows with variable icd_category
+icd_categories: "1.104"
+
+# source: tables/analysis/origin-flow.csv, origin_received PR, notes_before_floor
+received_pr: "6.327"
+
+# source: tables/analysis/origin-flow.csv, origin_received PR/CAMS, notes_before_floor
+received_pr_cams: "771"
+
+# source: tables/analysis/origin-flow.csv, origin_received PR/CHR, notes_before_floor
+received_pr_chr: "159"
+
+# source: tables/analysis/origin-flow.csv, origin_received PR/UEL, notes_before_floor
+received_pr_uel: "204"
+
+# source: tables/analysis/origin-flow.csv, origin_received PR/CHC-UFPR, notes_before_floor
+received_pr_chc_ufpr: "58"
+
+# source: tables/analysis/origin-flow.csv, origin_received AM/SEMSA, notes_before_floor
+received_am_semsa: "82"
+
+# source: tables/analysis/origin-flow.csv, origin_received AM/SES, notes_before_floor
+received_am_ses: "739"
+
+# source: tables/analysis/origin-flow.csv, origin_received AM, notes_before_floor
+received_am: "6"
+
+# source: tables/analysis/origin-flow.csv, origin_received SP/HC, notes_before_floor
+received_sp_hc: "145"
+
+# source: tables/analysis/origin-flow.csv, origin_received RS, notes_before_floor
+received_rs: "88"
+
+# source: tables/analysis/kit-origin-spellings.csv, number of rows
+einstein_spellings: "352"
+
+# source: tables/analysis/kit-origin-spellings.csv, sum of notes
+einstein_notes: "154.482"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2019, sum of notes of origins other than Nacional
+local_notes_2019: "105"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2019, notes of Nacional
+national_notes_2019: "537"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2019, Nacional divided by the other origins
+national_local_ratio_2019: "5,1 vezes"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2020, sum of notes of origins other than Nacional
+local_notes_2020: "2.803"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2020, notes of Nacional
+national_notes_2020: "4.403"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2020, Nacional divided by the other origins
+national_local_ratio_2020: "1,6 vezes"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, Nacional in 2020 over 2019, minus one
+national_growth_2020: "720%"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2021, sum of notes of origins other than Nacional
+local_notes_2021: "13.555"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2021, notes of Nacional
+national_notes_2021: "6.676"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2021, Nacional divided by the other origins
+national_local_ratio_2021: "0,5 vezes"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, Nacional in 2021 over 2020, minus one
+national_growth_2021: "52%"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2022, sum of notes of origins other than Nacional
+local_notes_2022: "14.701"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2022, notes of Nacional
+national_notes_2022: "8.739"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2022, Nacional divided by the other origins
+national_local_ratio_2022: "0,6 vezes"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, Nacional in 2022 over 2021, minus one
+national_growth_2022: "31%"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2023, sum of notes of origins other than Nacional
+local_notes_2023: "14.372"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2023, notes of Nacional
+national_notes_2023: "23.264"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2023, Nacional divided by the other origins
+national_local_ratio_2023: "1,6 vezes"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, Nacional in 2023 over 2022, minus one
+national_growth_2023: "166%"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2024, sum of notes of origins other than Nacional
+local_notes_2024: "17.286"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2024, notes of Nacional
+national_notes_2024: "35.487"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2024, Nacional divided by the other origins
+national_local_ratio_2024: "2,1 vezes"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, Nacional in 2024 over 2023, minus one
+national_growth_2024: "53%"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2025, sum of notes of origins other than Nacional
+local_notes_2025: "23.121"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2025, notes of Nacional
+national_notes_2025: "56.113"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2025, Nacional divided by the other origins
+national_local_ratio_2025: "2,4 vezes"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, Nacional in 2025 over 2024, minus one
+national_growth_2025: "58%"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2026, sum of notes of origins other than Nacional
+local_notes_2026: "18.131"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2026, notes of Nacional
+national_notes_2026: "34.441"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2026, Nacional divided by the other origins
+national_local_ratio_2026: "1,9 vezes"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, Nacional in 2026 over 2025, minus one
+national_growth_2026: "−39%"
+
+# source: constant of R/10-manuscript-numbers.R: last complete year of the series
+reference_year: "2025"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2025, sum of notes of origins other than Nacional
+local_notes_reference_year: "23.121"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2025, Nacional divided by the other origins
+national_local_ratio_reference_year: "2,4 vezes"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, Nacional in 2025 over 2024, minus one
+national_growth_reference_year: "58%"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, years in which Nacional exceeds the sum of the other origins
+years_national_above_locals: "2019, 2020, 2023, 2024, 2025 e 2026"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, years in which the other origins exceed Nacional
+years_locals_above_national: "2021 e 2022"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, sum of notes of origins other than Nacional, 2022 to 2025
+local_notes_2022_to_reference_year: "14.701 em 2022, 14.372 em 2023, 17.286 em 2024 e 23.121 em 2025"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2025, three largest origins other than Nacional
+top_local_origins_reference_year: "o TelessaúdeRS-UFRGS, o NatJus SP e o NatJus PR"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, year 2025, notes of the three largest origins other than Nacional
+top_local_origins_reference_year_notes: "4.438, 3.229 e 2.167"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2021, notes (0 when absent)
+notes_ba_2021: "4.335"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2021, rank among origins other than Nacional
+rank_local_ba_2021: "1ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2022, notes (0 when absent)
+notes_ba_2022: "1.610"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2022, rank among origins other than Nacional
+rank_local_ba_2022: "5ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2023, notes (0 when absent)
+notes_ba_2023: "716"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2023, rank among origins other than Nacional
+rank_local_ba_2023: "8ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2024, notes (0 when absent)
+notes_ba_2024: "533"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2024, rank among origins other than Nacional
+rank_local_ba_2024: "10ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2025, notes (0 when absent)
+notes_ba_2025: "0"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2025, rank among origins other than Nacional
+rank_local_ba_2025: "sem nota"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2026, notes (0 when absent)
+notes_ba_2026: "1.260"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin BA, year 2026, rank among origins other than Nacional
+rank_local_ba_2026: "5ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2021, notes (0 when absent)
+notes_go_2021: "739"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2021, rank among origins other than Nacional
+rank_local_go_2021: "6ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2022, notes (0 when absent)
+notes_go_2022: "598"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2022, rank among origins other than Nacional
+rank_local_go_2022: "9ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2023, notes (0 when absent)
+notes_go_2023: "91"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2023, rank among origins other than Nacional
+rank_local_go_2023: "14ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2024, notes (0 when absent)
+notes_go_2024: "0"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2024, rank among origins other than Nacional
+rank_local_go_2024: "sem nota"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2025, notes (0 when absent)
+notes_go_2025: "1"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2025, rank among origins other than Nacional
+rank_local_go_2025: "22ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2026, notes (0 when absent)
+notes_go_2026: "0"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin GO, year 2026, rank among origins other than Nacional
+rank_local_go_2026: "sem nota"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2021, notes (0 when absent)
+notes_ms_2021: "1.845"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2021, rank among origins other than Nacional
+rank_local_ms_2021: "3ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2022, notes (0 when absent)
+notes_ms_2022: "1.974"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2022, rank among origins other than Nacional
+rank_local_ms_2022: "3ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2023, notes (0 when absent)
+notes_ms_2023: "1.829"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2023, rank among origins other than Nacional
+rank_local_ms_2023: "3ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2024, notes (0 when absent)
+notes_ms_2024: "858"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2024, rank among origins other than Nacional
+rank_local_ms_2024: "6ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2025, notes (0 when absent)
+notes_ms_2025: "193"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2025, rank among origins other than Nacional
+rank_local_ms_2025: "18ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2026, notes (0 when absent)
+notes_ms_2026: "99"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MS, year 2026, rank among origins other than Nacional
+rank_local_ms_2026: "17ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2021, notes (0 when absent)
+notes_telessauders_ufrgs_2021: "411"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2021, rank among origins other than Nacional
+rank_local_telessauders_ufrgs_2021: "9ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2022, notes (0 when absent)
+notes_telessauders_ufrgs_2022: "1.724"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2022, rank among origins other than Nacional
+rank_local_telessauders_ufrgs_2022: "4ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2023, notes (0 when absent)
+notes_telessauders_ufrgs_2023: "124"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2023, rank among origins other than Nacional
+rank_local_telessauders_ufrgs_2023: "13ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2024, notes (0 when absent)
+notes_telessauders_ufrgs_2024: "1.276"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2024, rank among origins other than Nacional
+rank_local_telessauders_ufrgs_2024: "5ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2025, notes (0 when absent)
+notes_telessauders_ufrgs_2025: "4.438"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2025, rank among origins other than Nacional
+rank_local_telessauders_ufrgs_2025: "1ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2026, notes (0 when absent)
+notes_telessauders_ufrgs_2026: "3.191"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin TelessaúdeRS-UFRGS, year 2026, rank among origins other than Nacional
+rank_local_telessauders_ufrgs_2026: "2ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2021, notes (0 when absent)
+notes_sc_2021: "226"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2021, rank among origins other than Nacional
+rank_local_sc_2021: "11ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2022, notes (0 when absent)
+notes_sc_2022: "62"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2022, rank among origins other than Nacional
+rank_local_sc_2022: "16ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2023, notes (0 when absent)
+notes_sc_2023: "0"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2023, rank among origins other than Nacional
+rank_local_sc_2023: "sem nota"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2024, notes (0 when absent)
+notes_sc_2024: "0"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2024, rank among origins other than Nacional
+rank_local_sc_2024: "sem nota"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2025, notes (0 when absent)
+notes_sc_2025: "1.033"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2025, rank among origins other than Nacional
+rank_local_sc_2025: "8ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2026, notes (0 when absent)
+notes_sc_2026: "91"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SC, year 2026, rank among origins other than Nacional
+rank_local_sc_2026: "19ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2021, notes (0 when absent)
+notes_pi_2021: "53"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2021, rank among origins other than Nacional
+rank_local_pi_2021: "16ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2022, notes (0 when absent)
+notes_pi_2022: "44"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2022, rank among origins other than Nacional
+rank_local_pi_2022: "17ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2023, notes (0 when absent)
+notes_pi_2023: "0"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2023, rank among origins other than Nacional
+rank_local_pi_2023: "sem nota"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2024, notes (0 when absent)
+notes_pi_2024: "0"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2024, rank among origins other than Nacional
+rank_local_pi_2024: "sem nota"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2025, notes (0 when absent)
+notes_pi_2025: "0"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2025, rank among origins other than Nacional
+rank_local_pi_2025: "sem nota"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2026, notes (0 when absent)
+notes_pi_2026: "23"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PI, year 2026, rank among origins other than Nacional
+rank_local_pi_2026: "23ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2021, notes (0 when absent)
+notes_sp_2021: "764"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2021, rank among origins other than Nacional
+rank_local_sp_2021: "5ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2022, notes (0 when absent)
+notes_sp_2022: "2.210"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2022, rank among origins other than Nacional
+rank_local_sp_2022: "2ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2023, notes (0 when absent)
+notes_sp_2023: "2.607"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2023, rank among origins other than Nacional
+rank_local_sp_2023: "2ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2024, notes (0 when absent)
+notes_sp_2024: "4.346"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2024, rank among origins other than Nacional
+rank_local_sp_2024: "1ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2025, notes (0 when absent)
+notes_sp_2025: "3.229"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2025, rank among origins other than Nacional
+rank_local_sp_2025: "2ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2026, notes (0 when absent)
+notes_sp_2026: "4.267"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin SP, year 2026, rank among origins other than Nacional
+rank_local_sp_2026: "1ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2021, notes (0 when absent)
+notes_pr_2021: "297"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2021, rank among origins other than Nacional
+rank_local_pr_2021: "10ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2022, notes (0 when absent)
+notes_pr_2022: "606"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2022, rank among origins other than Nacional
+rank_local_pr_2022: "8ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2023, notes (0 when absent)
+notes_pr_2023: "979"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2023, rank among origins other than Nacional
+rank_local_pr_2023: "5ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2024, notes (0 when absent)
+notes_pr_2024: "1.864"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2024, rank among origins other than Nacional
+rank_local_pr_2024: "3ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2025, notes (0 when absent)
+notes_pr_2025: "2.167"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2025, rank among origins other than Nacional
+rank_local_pr_2025: "3ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2026, notes (0 when absent)
+notes_pr_2026: "1.391"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin PR, year 2026, rank among origins other than Nacional
+rank_local_pr_2026: "3ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2021, notes (0 when absent)
+notes_mt_2021: "1.097"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2021, rank among origins other than Nacional
+rank_local_mt_2021: "4ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2022, notes (0 when absent)
+notes_mt_2022: "1.353"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2022, rank among origins other than Nacional
+rank_local_mt_2022: "6ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2023, notes (0 when absent)
+notes_mt_2023: "1.633"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2023, rank among origins other than Nacional
+rank_local_mt_2023: "4ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2024, notes (0 when absent)
+notes_mt_2024: "1.672"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2024, rank among origins other than Nacional
+rank_local_mt_2024: "4ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2025, notes (0 when absent)
+notes_mt_2025: "2.047"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2025, rank among origins other than Nacional
+rank_local_mt_2025: "4ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2026, notes (0 when absent)
+notes_mt_2026: "1.342"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin MT, year 2026, rank among origins other than Nacional
+rank_local_mt_2026: "4ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2021, notes (0 when absent)
+notes_es_2021: "10"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2021, rank among origins other than Nacional
+rank_local_es_2021: "20ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2022, notes (0 when absent)
+notes_es_2022: "22"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2022, rank among origins other than Nacional
+rank_local_es_2022: "18ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2023, notes (0 when absent)
+notes_es_2023: "929"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2023, rank among origins other than Nacional
+rank_local_es_2023: "6ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2024, notes (0 when absent)
+notes_es_2024: "850"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2024, rank among origins other than Nacional
+rank_local_es_2024: "7ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2025, notes (0 when absent)
+notes_es_2025: "882"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2025, rank among origins other than Nacional
+rank_local_es_2025: "10ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2026, notes (0 when absent)
+notes_es_2026: "516"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, origin ES, year 2026, rank among origins other than Nacional
+rank_local_es_2026: "11ª"
+
+# source: tables/analysis/kit-production-by-origin-year.csv, years in which BA is the largest origin other than Nacional
+years_ba_first_local: "2021"
+
+# source: tables/institutions.csv, origins with last_note before 2025-09-01 and at least 10 notes in the base, excluding RJ and the sub-institutions of PR and SP
+abandoned_origins: "NatJus MG e NatJus AP"
+
+# source: tables/institutions.csv, same rows, last_note
+abandoned_origins_since: "NatJus MG desde agosto de 2023 e NatJus AP desde junho de 2023"
+
+# source: tables/institutions.csv, origin MG, notes_base
+mg_notes_base: "63"
+
+# source: tables/analysis/production-by-analysis-origin.csv, origin MG, notes_medicines
+mg_notes_medicines: "40"
+
+# source: tables/institutions.csv, origin MG, first_note
+mg_first_note: "agosto de 2020"
+
+# source: tables/institutions.csv, origin MG, last_note
+mg_last_note: "agosto de 2023"
+
+# source: tables/institutions.csv, origin AP, last_note
+ap_last_note: "junho de 2023"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origin with the lowest rate
+lowest_rate_origin: "NatJus MT"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, lowest rate
+lowest_rate: "9,9%"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, lowest rate divided by the second lowest
+lowest_rate_share_of_second: "81%"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origin with the second lowest rate
+second_lowest_rate_origin: "NatJus ES"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, three origins with the highest rate
+top_rate_origins: "NatJus BA, NatJus RR e NatJus GO"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, rates of the three highest divided by the lowest
+top_rate_origins_ratio_to_lowest: "entre 6,6 e 7,8 vezes"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origin with the highest rate
+highest_rate_origin: "NatJus BA"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, highest rate
+highest_rate: "77,4%"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origin Nacional, rate
+national_rate: "27,8%"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origins other than Nacional with rate above Nacional
+locals_above_national: "19"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, sum of favourable over sum of notes
+sample_rate: "31,3%"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origins other than Nacional, sum of favourable over sum of notes
+local_rate: "37,2%"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origins other than Nacional, sum of notes
+local_notes_sample: "104.074"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origin other than Nacional with most notes
+largest_local_origin: "NatJus SP"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, notes of RS/DMJ plus TelessaúdeRS-UFRGS
+rs_state_notes: "24.433"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, notes of that origin
+largest_local_origin_notes: "17.433"
+
+# source: tables/analysis/production-by-analysis-origin.csv, origin Nacional, notes_base
+national_notes_base: "261.357"
+
+# source: tables/analysis/production-by-analysis-origin.csv, sum of notes_base over the named origins
+origins_notes_base_sum: "501.804"
+
+# source: tables/analysis/attrition.csv step emitted by the series end, remaining, minus the sum of notes_base in production-by-analysis-origin.csv
+base_without_named_origin: "45"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origin Nacional, notes
+national_notes: "169.660"
+
+# source: tables/analysis/final-analysis-descriptive-production.csv, origin Nacional, notes over the sample total
+national_share: "62,0%"
+
+# source: tables/analysis/sample-flags.csv, flag dcb_is_anvisa_label, sum of flagged_notes
+flag_anvisa_label: "767"
+
+# source: tables/analysis/sample-flags.csv, flag icd_recorded, sum of flagged_notes
+flag_icd_missing: "4.543"
+
+# source: tables/analysis/sample-flags.csv, flag sex_recorded, sum of flagged_notes
+flag_sex_missing: "1.270"
+
+# source: tables/analysis/sample-flags.csv, flag emission_date_strict, sum of flagged_notes
+flag_date_not_strict: "525"
+
+# source: tables/analysis/sample-flags.csv, sum of flagged_notes over the four flags
+flags_total: "7.105"
+
+# source: tables/analysis/final-analysis-fit-populations.csv, model model_1_1, discarded_notes
+fixest_discarded_notes: "12.901"
+
+# source: tables/analysis/final-analysis-fit-populations.csv, model model_1_1, one minus coverage
+fixest_discarded_share: "4,7%"
+
+# source: constant of R/10-manuscript-numbers.R: display floor per medicine × CID cell
+pair_floor: "10"
+
+# source: tables/analysis/final-analysis-descriptive-pair-range-thresholds.csv, floor 10, eligible_pairs
+pairs_eligible: "467"
+
+# source: tables/analysis/final-analysis-descriptive-pair-range-thresholds.csv, floor 10, threshold 1
+pairs_range_100: "24"
+
+# source: tables/analysis/final-analysis-descriptive-pair-range-thresholds.csv, floor 10, threshold 0.8
+pairs_range_80: "85"
+
+# source: tables/analysis/final-analysis-descriptive-pair-range-thresholds.csv, floor 10, threshold 0.5
+pairs_range_50: "186"
+
+# source: tables/analysis/final-analysis-descriptive-pair-range-thresholds.csv, floor 10, threshold 0.2
+pairs_range_20: "314"
+
+# source: tables/analysis/final-analysis-descriptive-pair-extremes.csv, floor 10, distinct pair_id
+extreme_pairs: "24"
+
+# source: tables/analysis/final-analysis-descriptive-pair-extremes.csv, floor 10, distinct medicine
+extreme_pair_medicines: "Abemaciclibe, Azacitidina, Bevacizumabe, Blinatumomabe, Cloridrato de pazopanibe, Cloridrato de tipiracila + trifluridina, Elexacaftor + ivacaftor + tezacaftor, Fosfato de ruxolitinibe, Galcanezumabe, Ibrutinibe, Insulina degludeca, Lenalidomida, Malato de sunitinibe, Nivolumabe, Palbociclibe, Pembrolizumabe, Sacituzumabe govitecana, Tosilato de sorafenibe, Trastuzumabe, Trastuzumabe deruxtecana e Venetoclax"
+
+# source: tables/analysis/final-analysis-descriptive-pair-extremes.csv, floor 10, origins with rate 1 in at least 10 pairs
+always_favourable_origins: "o NatJus BA"
+
+# source: tables/analysis/final-analysis-descriptive-pair-extremes.csv, same rows, number of pairs
+always_favourable_counts: "14"
+
+# source: tables/analysis/final-analysis-descriptive-pair-extremes.csv, floor 10, origins with rate 0 in at least 10 pairs
+never_favourable_origins: "o NatJus MT e o TelessaúdeRS-UFRGS"
+
+# source: tables/analysis/final-analysis-descriptive-pair-extremes.csv, same rows, number of pairs
+never_favourable_counts: "19 e 10"
+
+# source: constant of R/10-manuscript-numbers.R: minimum extreme pairs for an origin to be named
+extreme_mention_min: "10"
+
+# source: tables/analysis/final-analysis-descriptive-pair-cells.csv, floor 10, cells of origins other than Nacional in pairs where Nacional has a cell
+ln_comparisons: "1.589"
+
+# source: tables/analysis/final-analysis-descriptive-pair-cells.csv, floor 10, distinct pairs with a Nacional cell and at least one other
+ln_pairs: "452"
+
+# source: same comparisons, absolute difference of rates equal to 1
+ln_gap_100: "0"
+
+# source: same comparisons, absolute difference of rates at least 0.8
+ln_gap_80: "13"
+
+# source: same comparisons, absolute difference of rates at least 0.5
+ln_gap_50: "203"
+
+# source: same comparisons, absolute difference of rates at least 0.2
+ln_gap_20: "758"
+
+# source: same comparisons with gap at least 0.2, Nacional rate above the local rate
+ln_gap_20_national_higher: "225"
+
+# source: same comparisons with gap at least 0.2, local rate above the Nacional rate
+ln_gap_20_local_higher: "533"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_local_advantage medicine
+ln_ms_local_medicine: "brometo de umeclidinio + trifenatato de vilanterol"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_local_advantage cid
+ln_ms_local_cid: "J44"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_local_advantage local_favourable
+ln_ms_local_local_favourable: "20"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_local_advantage local_total
+ln_ms_local_local_total: "21"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_local_advantage national_favourable
+ln_ms_local_national_favourable: "4"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_local_advantage national_total
+ln_ms_local_national_total: "55"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_local_advantage rate
+ln_ms_local_local_rate: "95,2%"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_local_advantage national_rate
+ln_ms_local_national_rate: "7,3%"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_national_advantage medicine
+ln_ms_national_medicine: "omalizumabe"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_national_advantage cid
+ln_ms_national_cid: "L50"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_national_advantage local_favourable
+ln_ms_national_local_favourable: "2"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_national_advantage local_total
+ln_ms_national_local_total: "25"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_national_advantage national_favourable
+ln_ms_national_national_favourable: "1.033"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_national_advantage national_total
+ln_ms_national_national_total: "1.276"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_national_advantage rate
+ln_ms_national_local_rate: "8,0%"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10 local_origin MS, direction largest_national_advantage national_rate
+ln_ms_national_national_rate: "81,0%"
+
+# source: tables/analysis/final-analysis-origin-effect-candidates.csv, model model_1_2, origin with the lowest standardized_probability
+std_prob_lowest_origin: "NatJus MT"
+
+# source: tables/analysis/final-analysis-origin-effect-candidates.csv, model model_1_2, lowest standardized_probability
+std_prob_lowest: "9,0%"
+
+# source: tables/analysis/final-analysis-origin-effect-candidates.csv, model model_1_2, origin with the highest standardized_probability
+std_prob_highest_origin: "NatJus AL"
+
+# source: tables/analysis/final-analysis-origin-effect-candidates.csv, model model_1_2, highest standardized_probability
+std_prob_highest: "62,6%"
+
+# source: tables/analysis/final-analysis-origin-effect-candidates.csv, model model_1_2, highest minus lowest standardized_probability, percentage points
+std_prob_range_pp: "54"
+
+# source: tables/analysis/final-analysis-origin-effect-candidates.csv, model model_1_2, origin Nacional, standardized_probability
+std_prob_national: "28,3%"
+
+# source: tables/analysis/final-analysis-origin-effect-candidates.csv, model model_1_2, origins other than Nacional with standardized_probability above Nacional
+std_prob_locals_above_national: "19"
+
+# source: tables/analysis/final-analysis-origin-effect-candidates.csv, model model_1_2, raw_rate of the origin with the highest standardized_probability
+std_prob_highest_raw: "63,1%"
+
+# source: tables/analysis/final-analysis-origin-effect-candidates.csv, model model_1_2, raw_rate of the origin with the lowest standardized_probability
+std_prob_lowest_raw: "9,9%"
+
+# source: tables/analysis/final-analysis-fit-random-effects.csv, model model_1_2, group origin, standard_deviation
+sd_origin: "1,12"
+
+# source: tables/analysis/final-analysis-fit-random-effects.csv, model model_1_2, group medicine, standard_deviation
+sd_medicine: "1,10"
+
+# source: tables/analysis/final-analysis-fit-random-effects.csv, model model_1_2, group cid, standard_deviation
+sd_cid: "0,76"
+
+# source: tables/analysis/final-analysis-profile-interval-candidates.csv, model model_1_2, origin_standard_deviation, conf_low and conf_high
+sd_origin_profile_interval: "[0,87; 1,52]"
+
+# source: tables/analysis/final-analysis-metric-candidates.csv, model model_1_2, metric mor, estimate
+mor: "2,9"
+
+# source: tables/analysis/final-analysis-likelihood-ratio-candidates.csv, comparison random_origin_variance, statistic
+origin_lrt_statistic: "17607,5"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selIndicacaoConformidadeSim, odds_ratio
+or_conformity: "2,55"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selIndicacaoConformidadeSim, odds_ratio_low and odds_ratio_high
+or_conformity_interval: "[2,43; 2,67]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selPrevistoProtocoloSim, odds_ratio
+or_protocol: "1,17"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selPrevistoProtocoloSim, odds_ratio_low and odds_ratio_high
+or_protocol_interval: "[1,13; 1,21]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selDisponivelSusSim, odds_ratio
+or_sus_available: "1,49"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selDisponivelSusSim, odds_ratio_low and odds_ratio_high
+or_sus_available_interval: "[1,43; 1,55]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selOncologicoSim, odds_ratio
+or_oncology: "1,44"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selOncologicoSim, odds_ratio_low and odds_ratio_high
+or_oncology_interval: "[1,35; 1,54]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selRegistroAnvisaSim, odds_ratio
+or_anvisa: "1,22"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selRegistroAnvisaSim, odds_ratio_low and odds_ratio_high
+or_anvisa_interval: "[1,09; 1,37]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selExisteBiossimilarSim, odds_ratio
+or_biosimilar: "0,91"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selExisteBiossimilarSim, odds_ratio_low and odds_ratio_high
+or_biosimilar_interval: "[0,88; 0,94]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selRecomendacaoConitecFavoravel, odds_ratio
+or_conitec_favourable: "2,42"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selRecomendacaoConitecFavoravel, odds_ratio_low and odds_ratio_high
+or_conitec_favourable_interval: "[2,33; 2,51]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selRecomendacaoConitecDesfavoravel, odds_ratio
+or_conitec_unfavourable: "0,45"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selRecomendacaoConitecDesfavoravel, odds_ratio_low and odds_ratio_high
+or_conitec_unfavourable_interval: "[0,44; 0,47]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selStaGeneroMasculino, odds_ratio
+or_male: "1,03"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selStaGeneroMasculino, odds_ratio_low and odds_ratio_high
+or_male_interval: "[1,00; 1,05]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selDefensoriaPublicaMinisterio Publico, odds_ratio
+or_public_prosecutor: "0,98"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term cov_selDefensoriaPublicaMinisterio Publico, odds_ratio_low and odds_ratio_high
+or_public_prosecutor_interval: "[0,91; 1,04]"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term ano_mes, odds_ratio
+or_time_monthly: "0,976"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term ano_mes, exp(12 × estimate_logit)
+or_time_yearly: "0,75"
+
+# source: tables/analysis/final-analysis-fit-coefficients.csv, model model_1_2, term ano_mes, 1 − exp(12 × estimate_logit)
+time_yearly_decline: "25%"
+
+# source: tables/analysis/final-analysis-descriptive-conitec-rates.csv, level Nao avaliada, sum of favourable over sum of total
+conitec_rate_not_evaluated: "29,2%"
+
+# source: tables/analysis/final-analysis-descriptive-conitec-rates.csv, level Favoravel, sum of favourable over sum of total
+conitec_rate_favourable: "58,3%"
+
+# source: tables/analysis/final-analysis-descriptive-conitec-rates.csv, level Desfavoravel, sum of favourable over sum of total
+conitec_rate_unfavourable: "16,2%"
+
+# source: tables/analysis/final-analysis-descriptive-pair-dispersion.csv, floor 10, estimate_type raw, median of range, percentage points
+pair_gap_median_pp: "37"
+
+# source: tables/analysis/final-analysis-descriptive-pair-dispersion.csv, floor 10, estimate_type raw, share of pairs with range below 0.10
+pair_gap_below_10_share: "21%"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10, local NatJus of the production table absent from local_origin
+ln_locals_without_pair: "NatJus PI"
+
+# source: tables/analysis/final-analysis-descriptive-local-national-extremes.csv, floor 10, distinct local_origin
+ln_locals_with_pair: "23"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Desfavoravel lowest standardized_probability, origin
+conitec_unfav_std_lowest_origin: "NatJus MT"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Desfavoravel lowest standardized_probability
+conitec_unfav_std_lowest: "3,0%"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Desfavoravel highest standardized_probability, origin
+conitec_unfav_std_highest_origin: "NatJus AL"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Desfavoravel highest standardized_probability
+conitec_unfav_std_highest: "47,8%"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Desfavoravel range of standardized_probability in percentage points
+conitec_unfav_std_range_pp: "45"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Desfavoravel range of raw_rate in percentage points
+conitec_unfav_raw_range_pp: "64"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Desfavoravel sum of notes
+conitec_unfav_notes: "66.282"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Favoravel lowest standardized_probability, origin
+conitec_fav_std_lowest_origin: "NatJus MT"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Favoravel lowest standardized_probability
+conitec_fav_std_lowest: "21,8%"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Favoravel highest standardized_probability, origin
+conitec_fav_std_highest_origin: "NatJus AL"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Favoravel highest standardized_probability
+conitec_fav_std_highest: "90,2%"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Favoravel range of standardized_probability in percentage points
+conitec_fav_std_range_pp: "68"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Favoravel range of raw_rate in percentage points
+conitec_fav_raw_range_pp: "66"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Favoravel sum of notes
+conitec_fav_notes: "49.616"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Nao avaliada lowest standardized_probability, origin
+conitec_not_std_lowest_origin: "NatJus MT"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Nao avaliada lowest standardized_probability
+conitec_not_std_lowest: "7,5%"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Nao avaliada highest standardized_probability, origin
+conitec_not_std_highest_origin: "NatJus AL"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Nao avaliada highest standardized_probability
+conitec_not_std_highest: "60,2%"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Nao avaliada range of standardized_probability in percentage points
+conitec_not_std_range_pp: "53"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Nao avaliada range of raw_rate in percentage points
+conitec_not_raw_range_pp: "71"
+
+# source: tables/analysis/kit-conitec-stratified-standardization.csv, conitec_level Nao avaliada sum of notes
+conitec_not_notes: "157.836"
+

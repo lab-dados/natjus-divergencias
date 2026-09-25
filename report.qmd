@@ -1,0 +1,77 @@
+---
+title: "Judicialização da saúde e as divergências entre os Núcleos de Apoio Técnico do Judiciário (NatJus): uma análise empírica"
+series: "LabDados Working Paper Series"
+series-number: "1"
+short-title: "As divergências entre os NatJus"
+author:
+  - name: Bruno da Cunha de Oliveira
+  - name: Daniel Wei Liang Wang
+  - name: Julio Trecenti
+  - name: Beatriz Brajal
+date: today
+date-format: "D [de] MMMM [de] YYYY"
+# Artigo, não relatório: as seções correm no fluxo; só introdução,
+# declarações, referências e apêndices abrem página (typst/typst-show.typ).
+secoes-continuas: true
+number-sections: true
+# Quarto shifts headings down a level when it finds no level-1 heading in the
+# file itself; the sections come through includes, so the shift is pinned
+# at zero.
+shift-heading-level-by: 0
+# Pandoc's citeproc renders the ABNT style of the CSL file; Typst's own
+# bibliography engine would ignore it.
+citeproc: true
+crossref:
+  title-delim: ":"
+# The filter runs before Quarto's cross-reference pass so that it sees the
+# raw tables and images and can fold the source and note paragraphs into
+# each float; see typst/source-notes.lua.
+filters:
+  - at: pre-quarto
+    path: typst/source-notes.lua
+format:
+  typst:
+    papersize: a4
+    template-partials:
+      - typst/page.typ
+      - typst/typst-template.typ
+      - typst/typst-show.typ
+    font-paths:
+      - typst/fonts
+    keep-typ: true
+---
+
+{{< include sections/00-front-matter.qmd >}}
+
+{{< include sections/01-introduction.qmd >}}
+
+{{< include sections/02-institutional-context.qmd >}}
+
+{{< include sections/03-data-and-methods.qmd >}}
+
+{{< include sections/04-results.qmd >}}
+
+{{< include sections/05-discussion.qmd >}}
+
+{{< include sections/06-final-remarks.qmd >}}
+
+{{< include sections/07-declarations.qmd >}}
+
+# Referências {.unnumbered}
+
+::: {#refs}
+:::
+
+# Apêndices {.unnumbered}
+
+```{=typst}
+// The appendix numbers its tables and figures by letter, as the Word
+// version does through crossref labels; in Typst the counters restart and
+// the numbering pattern changes for everything that follows.
+#counter(figure.where(kind: "quarto-float-tbl")).update(0)
+#counter(figure.where(kind: "quarto-float-fig")).update(0)
+#show figure.where(kind: "quarto-float-tbl"): set figure(numbering: "A")
+#show figure.where(kind: "quarto-float-fig"): set figure(numbering: "A")
+```
+
+{{< include sections/08-appendix.qmd >}}
