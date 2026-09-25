@@ -41,7 +41,7 @@ As figuras compartilham a fonte do PDF pelo tema de figuras em `R/figure-theme.R
 
 As funções do pacote R `lab-dados/enatjus`, que é privado, de que os scripts dependem ficam em `R/enatjus/`: só essas e as que elas usam por sua vez, 54 definições copiadas do commit `d2ee1a07e8bd54fa0baa237bdee760a334958389`, com a licença MIT do pacote. `R/enatjus.R` as carrega, e os scripts dão `source()` nele em vez de `library(enatjus)`. A única adaptação é `R/enatjus/read-base.R`, que lê a base pública em vez da base interna da coleta.
 
-A base é o arquivo `data/base_enatjus_tratada.parquet` do dataset `BrunoDCDO/enatjus_v2` no Hugging Face, na revisão e com o SHA-256 registrados em `R/enatjus/read-base.R`. O dataset tem acesso sob aprovação: peça acesso na página dele e faça login (`uvx --from huggingface_hub hf auth login`). Depois:
+A base é o arquivo `data/base_enatjus_tratada.parquet` do dataset `BrunoDCDO/enatjus_v2` no Hugging Face, na revisão e com o SHA-256 registrados em `R/enatjus/read-base.R`. O dataset é aberto e o download não exige login. Para baixar a base e reconstruir o artigo a partir dela:
 
 ```sh
 tools/baixar-base.sh

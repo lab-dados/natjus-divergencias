@@ -42,7 +42,7 @@ As funções do pacote de coleta usadas aqui vêm de `R/enatjus/`, copiadas do c
 
 ### Nível 4: reconstruir a amostra a partir da base
 
-Exige, além do nível 3, acesso à base no Hugging Face. A base é o arquivo `data/base_enatjus_tratada.parquet` do dataset `BrunoDCDO/enatjus_v2`, na revisão e com o SHA-256 registrados em `R/enatjus/read-base.R`. O dataset tem acesso sob aprovação: peça acesso na página dele e faça login (`uvx --from huggingface_hub hf auth login`).
+Exige, além do nível 3, acesso à base no Hugging Face. A base é o arquivo `data/base_enatjus_tratada.parquet` do dataset `BrunoDCDO/enatjus_v2`, na revisão e com o SHA-256 registrados em `R/enatjus/read-base.R`. O dataset é aberto e o download não exige login.
 
 Baixa a base com `tools/baixar-base.sh`, se ela ainda não estiver em `data/hf/`, e roda `00` a `04` antes do nível 3. `R/00-setup.R` confere os pacotes e o hash da base; `R/enatjus/read-base.R` confere o hash de novo a cada leitura e para se o arquivo não for o do artigo. Quem já tem o arquivo em outro lugar aponta a variável `NATJUS_BASE` para ele.
 

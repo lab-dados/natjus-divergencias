@@ -3,8 +3,7 @@
 #
 #   tools/baixar-base.sh
 #
-# O dataset tem acesso sob aprovação: peça acesso na página do dataset e faça
-# login antes (`uvx --from huggingface_hub hf auth login`). O arquivo vai para
+# O dataset é aberto e o download não exige login. O arquivo vai para
 # data/hf/, fora do Git, onde R/enatjus/read-base.R o procura. Dataset,
 # revisão, caminho e hash são lidos de R/enatjus/read-base.R, a fonte única.
 set -euo pipefail
