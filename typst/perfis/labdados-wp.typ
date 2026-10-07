@@ -103,6 +103,15 @@
 // porque a quebra já separa o nome da afiliação.
 #let autor(body) = block(width: 100%, below: espaco-ate(1.8, corpo), {
   set par(first-line-indent: 0pt, justify: false)
+  // O link do ORCID não se parte entre linhas: a triagem do SciELO lê o
+  // texto extraído do PDF, e um iD quebrado no hífen não é reconhecido.
+  show link: box
+  // O ícone iD do ORCID vem com altura fixa; sem `width: auto`, a largura
+  // de 100% que o perfil dá às imagens o esticaria pela linha inteira. O box
+  // desce o ícone 0,18em abaixo da linha de base, para centrá-lo na altura
+  // das letras.
+  set image(width: auto)
+  show image: box.with(baseline: 0.18em)
   show strong: s => {
     text(weight: 700, if s.body.has("text") { s.body.text.trim(".", at: end) } else { s.body })
     linebreak()
@@ -499,7 +508,7 @@
           if titulo-curto != none { titulo-curto } else { [] })
       }
     },
-    footer: align(right + bottom, text(size: 9pt, weight: 700,
+    footer: align(right, text(size: 9pt, weight: 700,
       fill: tinta-suave, context counter(page).display())),
   )
 

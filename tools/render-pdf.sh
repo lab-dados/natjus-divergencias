@@ -1,9 +1,6 @@
 #!/usr/bin/env sh
-# Renderiza a diagramação em Typst do artigo com o apêndice em duas versões:
-# report.pdf, com a capa da série de working papers, e report-neutro.pdf, o
-# mesmo documento sem capa e sem série, para publicar fora da série. As duas
-# saem do mesmo report.qmd; a neutra só liga o metadado `neutro`, que
-# typst/typst-show.typ repassa ao perfil.
+# Renderiza a diagramação em Typst do artigo com o apêndice em report.pdf,
+# com a capa da série de working papers.
 #
 # A tipografia de typst/typst-template.typ foi calibrada na série 0.15 do
 # Typst, então um binário 0.15 tem preferência sobre o 0.14 que o Quarto
@@ -28,8 +25,4 @@ fi
 # fonte conforme o computador que o compilava.
 export TYPST_IGNORE_SYSTEM_FONTS=true
 
-# A neutra vem primeiro: o Quarto compila sempre para report.pdf e só depois
-# renomeia para o --output, então na ordem inversa ela levaria junto o
-# report.pdf da série.
-quarto render report.qmd --to typst -M neutro=true --output report-neutro.pdf "$@"
 quarto render report.qmd --to typst "$@"

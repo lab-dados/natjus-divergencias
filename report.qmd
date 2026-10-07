@@ -7,7 +7,7 @@ author:
   - name: Bruno da Cunha de Oliveira
   - name: Daniel Wei Liang Wang
   - name: Julio Trecenti
-  - name: Beatriz Brajal
+  - name: Beatriz Brajal Varejão
 date: today
 date-format: "D [de] MMMM [de] YYYY"
 # Artigo, não relatório: as seções correm no fluxo; só introdução,

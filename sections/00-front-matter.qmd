@@ -1,29 +1,33 @@
 <!-- Primeira página de conteúdo como o SciELO Preprints pede: nome de cada autor,
      afiliação completa logo abaixo e ORCID com link ativado; depois resumo e
-     palavras-chave em português e, então, título, resumo e palavras-chave em inglês.
-     Sem biografia, que o servidor não pede. As divs "Autor" viram estilo de parágrafo
-     no Word e bloco de corpo de texto no Typst. Incluída por paper.qmd e report.qmd.
-     O título, as keywords e o abstract em inglês são tradução do português;
-     ao mudar o resumo, refazer o abstract. -->
+     palavras-chave em português e, então, título, resumo e palavras-chave em inglês
+     e em espanhol. Sem biografia, que o servidor não pede. As divs "Autor" viram
+     estilo de parágrafo no Word e bloco de corpo de texto no Typst. Incluída por
+     paper.qmd e report.qmd. As versões em inglês e em espanhol são tradução do
+     português; ao mudar o resumo, refazer o abstract e o resumen. -->
 
 ```{=typst}
 #folha-de-rosto[
 ```
 
 ::: {custom-style="Autor"}
-**Bruno da Cunha de Oliveira.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil; Insper Instituto de Ensino e Pesquisa, São Paulo, SP, Brasil. ORCID: <https://orcid.org/0000-0002-1943-0110>
+**Bruno da Cunha de Oliveira.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil; Insper Instituto de Ensino e Pesquisa, São Paulo, SP, Brasil.\
+ORCID: ![ORCID iD](figures/orcid-id.svg){height=0.95em} <https://orcid.org/0000-0002-1943-0110>
 :::
 
 ::: {custom-style="Autor"}
-**Daniel Wei Liang Wang.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil. ORCID: <https://orcid.org/0000-0002-7761-1315>
+**Daniel Wei Liang Wang.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil.\
+ORCID: ![ORCID iD](figures/orcid-id.svg){height=0.95em} <https://orcid.org/0000-0002-7761-1315>
 :::
 
 ::: {custom-style="Autor"}
-**Julio Trecenti.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil; Insper Instituto de Ensino e Pesquisa, São Paulo, SP, Brasil. ORCID: <https://orcid.org/0000-0002-1680-6389>
+**Julio Trecenti.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil; Insper Instituto de Ensino e Pesquisa, São Paulo, SP, Brasil.\
+ORCID: ![ORCID iD](figures/orcid-id.svg){height=0.95em} <https://orcid.org/0000-0002-1680-6389>
 :::
 
 ::: {custom-style="Autor"}
-**Beatriz Brajal.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil; Universidade de São Paulo, Instituto de Matemática e Estatística, São Paulo, SP, Brasil. ORCID: <https://orcid.org/0000-0003-2467-0677>
+**Beatriz Brajal Varejão.** Fundação Getulio Vargas, Escola de Direito de São Paulo, São Paulo, SP, Brasil; Universidade de São Paulo, Instituto de Matemática e Estatística, São Paulo, SP, Brasil.\
+ORCID: ![ORCID iD](figures/orcid-id.svg){height=0.95em} <https://orcid.org/0000-0003-2467-0677>
 :::
 
 ```{=typst}
@@ -51,6 +55,22 @@ Brazil's Judiciary Technical Support Centers (NatJus) are bodies whose function 
 **Keywords:** health litigation, NatJus, medicines, health technology assessment, National Council of Justice (CNJ)
 
 ```{=typst}
+// O documento está em pt-BR; sem isto, o bloco em espanhol seria hifenizado
+// pelas regras do português.
+#v(espaco-ate(1.5, corpo))
+#text(lang: "es")[
+```
+
+**Judicialización de la salud y divergencias entre los Núcleos de Apoyo Técnico del Poder Judicial de Brasil (NatJus): un análisis empírico**
+
+**Resumen**
+
+Los Núcleos de Apoyo Técnico del Poder Judicial (NatJus) son órganos cuya función es ofrecer apoyo técnico a los jueces en casos que involucran demandas judiciales de tratamientos de salud. La importancia de estos órganos ha aumentado recientemente con las decisiones del Supremo Tribunal Federal (STF) en el Tema 6 de Repercusión General, sobre demandas judiciales de medicamentos no incorporados al Sistema Único de Salud (SUS), y en la Acción Directa de Inconstitucionalidad (ADI) 7265, sobre demandas judiciales de tratamientos no incluidos en el listado de coberturas obligatorias de la Agencia Nacional de Salud Suplementaria (ANS). En ambas decisiones, el STF estableció la obligatoriedad de que los jueces consulten a los NatJus, siempre que estén disponibles en la respectiva jurisdicción, o a otros entes o personas con experticia técnica en salud. Ante este panorama, este estudio analizó {{< var sample_total >}} notas técnicas sobre medicamentos registradas en la plataforma e-NatJus y emitidas por un total de {{< var n_origins >}} NatJus distintos. Los resultados apuntan a la existencia de una gran disparidad en las recomendaciones de los diferentes NatJus, incluso controlando por una serie de características de los casos individuales.
+
+**Palabras clave:** judicialización de la salud, NatJus, medicamentos, evaluación de tecnologías sanitarias, Consejo Nacional de Justicia (CNJ)
+
+```{=typst}
+]
 ]
 // Sumário e listas vêm depois da folha de rosto, não antes.
 #pre-textuais()

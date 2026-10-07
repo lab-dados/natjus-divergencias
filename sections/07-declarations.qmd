@@ -19,7 +19,7 @@ As contribuições seguem a taxonomia CRediT.
 
 **Julio Trecenti:** análise formal; metodologia; software; validação; visualização; escrita (revisão e edição).
 
-**Beatriz Brajal:** análise formal; metodologia; software; validação; visualização; escrita (revisão e edição).
+**Beatriz Brajal Varejão:** análise formal; metodologia; software; validação; visualização; escrita (revisão e edição).
 
 ## Conflito de interesses {.unnumbered}
 

@@ -2,9 +2,6 @@
 // LabDados Working Paper Series (typst/perfis/labdados-wp.typ).
 // A data da capa vem de `date` (o Quarto a formata com `date-format` e o
 // idioma do documento), e `report-date` segue aceito como string fixa.
-// Com o metadado `neutro` (tools/render-pdf.sh passa `-M neutro=true`), o
-// mesmo documento sai fora da série: sem capa e sem nome e número da série no
-// cabeçalho.
 // "NatJus" não hifeniza. A proteção de palavras capitalizadas da base só
 // reconhece maiúscula seguida de minúsculas, e o nome, com a maiúscula no
 // meio, escapa dela: o título em inglês da folha de rosto saía "Nat-Jus".
@@ -18,15 +15,11 @@ $endif$
 $if(subtitle)$
   subtitulo: [$subtitle$],
 $endif$
-$if(neutro)$
-  neutro: true,
-$else$
 $if(series)$
   serie: [$series$],
 $endif$
 $if(series-number)$
   numero: [$series-number$],
-$endif$
 $endif$
 $if(short-title)$
   titulo-curto: [$short-title$],

@@ -8,4 +8,5 @@ Material de terceiros mantém a licença de origem:
 
 - a fonte IBM Plex Sans em `typst/fonts/ibm-plex-sans/` (SIL Open Font License, `typst/fonts/ibm-plex-sans/OFL.txt`);
 - o estilo de citação em `csl/`;
+- o ícone iD do ORCID em `figures/orcid-id.svg`, marca da ORCID, Inc., usado na folha de rosto conforme as diretrizes de exibição do iD que a ORCID publica;
 - `typst/base.typ` e `typst/perfis/labdados-wp.typ`, derivados de arquivos de outro repositório da mesma organização, `lab-dados/revista-automatizada`, que não declara licença. A licença desses dois arquivos é a que a organização definir para o repositório de origem.

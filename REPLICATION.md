@@ -22,7 +22,7 @@ No nível 2 a comparação de dados, tabelas e números do texto é byte a byte,
 
 Exige Quarto, uv e, para o PDF, Typst. Não exige R.
 
-Renderiza `paper.docx`, `appendix.docx`, `paper-with-appendix.docx`, um docx por seção em `sections/`, `report.pdf` e `report-neutro.pdf`, a partir das tabelas, figuras e números versionados.
+Renderiza `paper.docx`, `appendix.docx`, `paper-with-appendix.docx`, um docx por seção em `sections/`, e `report.pdf`, a partir das tabelas, figuras e números versionados.
 
 ### Nível 2: reconstruir figuras, tabelas e números
 
